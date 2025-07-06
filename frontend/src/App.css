@@ -11651,6 +11651,7 @@ select.form-input-compact:disabled {
   }
   
   .footer-content-two-cols {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   
