@@ -38,6 +38,7 @@ function App() {
           <Route path="/order-confirmation/:orderId" element={<OrderConfirmation />} />
         </Routes>
         <Footer />
+        <MobileBottomNav />
       </div>
     </Router>
   );
