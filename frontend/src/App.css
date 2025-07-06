@@ -11389,6 +11389,11 @@ select.form-input-compact:disabled {
     top: -2px;
     right: -2px;
   }
+  
+  /* Footer bottom padding for very small screens */
+  .footer-bottom {
+    padding-bottom: 75px;
+  }
 }
 
 /* Hide desktop navigation on mobile when bottom nav is visible */
