@@ -8922,14 +8922,6 @@ select.form-input-compact:disabled {
   display: contents;
 }
 
-.footer-content-two-cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  position: relative;
-  z-index: 2;
-}
-
 .footer-section {
   position: relative;
 }
