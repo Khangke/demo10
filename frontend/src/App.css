@@ -8904,7 +8904,7 @@ select.form-input-compact:disabled {
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   gap: 5rem;
   position: relative;
   z-index: 2;
