@@ -40,7 +40,7 @@ const MobileBottomNav = () => {
   const navItems = [
     {
       path: '/',
-      icon: 'home',
+      icon: 'home-outline',
       label: 'Trang Chủ',
       activeIcon: 'home'
     },
@@ -49,6 +49,24 @@ const MobileBottomNav = () => {
       icon: 'storefront-outline',
       label: 'Sản Phẩm', 
       activeIcon: 'storefront'
+    },
+    {
+      path: '/about',
+      icon: 'information-circle-outline',
+      label: 'Giới Thiệu',
+      activeIcon: 'information-circle'
+    },
+    {
+      path: '/news',
+      icon: 'newspaper-outline',
+      label: 'Tin Tức',
+      activeIcon: 'newspaper'
+    },
+    {
+      path: '/contact',
+      icon: 'call-outline',
+      label: 'Liên Hệ',
+      activeIcon: 'call'
     },
     {
       path: '/cart',
@@ -62,12 +80,6 @@ const MobileBottomNav = () => {
       icon: 'person-outline',
       label: 'Tài Khoản',
       activeIcon: 'person'
-    },
-    {
-      path: '/contact',
-      icon: 'call-outline',
-      label: 'Liên Hệ',
-      activeIcon: 'call'
     }
   ];
 
