@@ -8904,7 +8904,7 @@ select.form-input-compact:disabled {
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
   gap: 5rem;
   position: relative;
   z-index: 2;
@@ -8913,9 +8913,13 @@ select.form-input-compact:disabled {
 .footer-content-two-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 3rem;
   position: relative;
   z-index: 2;
+}
+
+.footer-two-cols {
+  display: contents;
 }
 
 .footer-content-two-cols {
