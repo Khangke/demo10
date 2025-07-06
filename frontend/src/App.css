@@ -11173,8 +11173,15 @@ select.form-input-compact:disabled {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.5rem;
   max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mobile-bottom-nav-container::-webkit-scrollbar {
+  display: none;
 }
 
 .mobile-nav-item {
@@ -11184,9 +11191,10 @@ select.form-input-compact:disabled {
   text-decoration: none;
   color: #B8B8B8;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 0.5rem 0.25rem;
-  border-radius: 12px;
-  min-width: 50px;
+  padding: 0.4rem 0.2rem;
+  border-radius: 10px;
+  min-width: 42px;
+  flex-shrink: 0;
   position: relative;
   overflow: hidden;
 }
