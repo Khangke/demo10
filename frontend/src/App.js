@@ -38,6 +38,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/order-confirmation/:orderId" element={<OrderConfirmation />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
         <MobileBottomNav />
