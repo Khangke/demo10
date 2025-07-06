@@ -11499,6 +11499,13 @@ select.form-input-compact:disabled {
     grid-template-columns: none;
   }
   
+  .footer-content-two-cols {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-template-columns: none;
+  }
+  
   /* Brand Section - Compact */
   .footer-brand h3 {
     font-size: 1.8rem;
