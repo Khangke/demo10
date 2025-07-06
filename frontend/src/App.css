@@ -11635,6 +11635,10 @@ select.form-input-compact:disabled {
     gap: 1.5rem;
   }
   
+  .footer-content-two-cols {
+    gap: 1.5rem;
+  }
+  
   .footer-brand h3 {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
