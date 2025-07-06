@@ -8,6 +8,8 @@ import ProductDetail from "./components/ProductDetail";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import OrderConfirmation from "./components/OrderConfirmation";
+import AboutPage from "./components/AboutPage";
+import NewsPage from "./components/NewsPage";
 import AccountPage from "./components/AccountPage";
 import ContactPage from "./components/ContactPage";
 import Header from "./components/Header";
