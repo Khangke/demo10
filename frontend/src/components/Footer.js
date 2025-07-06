@@ -32,13 +32,13 @@ const Footer = () => {
             </div>
             
             <div className="footer-section">
-              <h4>Liên Kết Nhanh</h4>
+              <h4>Hỗ Trợ Khách Hàng</h4>
               <ul>
-                <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#products">Sản Phẩm</a></li>
-                <li><a href="#about">Về Chúng Tôi</a></li>
-                <li><a href="#reviews">Đánh Giá</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
+                <li><a href="#faq">Câu Hỏi Thường Gặp</a></li>
+                <li><a href="#buying-guide">Hướng Dẫn Mua Hàng</a></li>
+                <li><a href="#warranty">Chính Sách Bảo Hành</a></li>
+                <li><a href="#technical-support">Hỗ Trợ Kỹ Thuật</a></li>
+                <li><a href="#size-guide">Hướng Dẫn Chọn Size</a></li>
               </ul>
             </div>
             
