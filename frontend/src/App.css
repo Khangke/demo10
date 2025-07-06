@@ -11515,7 +11515,10 @@ select.form-input-compact:disabled {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    grid-template-columns: none;
+  }
+  
+  .footer-two-cols {
+    display: block;
   }
   
   /* Brand Section - Compact */
