@@ -10,6 +10,7 @@ import Checkout from "./components/Checkout";
 import OrderConfirmation from "./components/OrderConfirmation";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MobileBottomNav from "./components/MobileBottomNav";
 
 // Component để scroll to top khi route thay đổi
 function ScrollToTop() {
