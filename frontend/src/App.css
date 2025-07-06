@@ -11315,9 +11315,14 @@ select.form-input-compact:disabled {
     display: block;
   }
   
-  /* Adjust body padding for smaller screens */
+  /* Adjust body padding for smaller screens - account for footer + bottom nav */
   body {
-    padding-bottom: 70px;
+    padding-bottom: 0; /* Reset, let footer handle its own spacing */
+  }
+  
+  /* Add padding to footer bottom to account for mobile nav */
+  .footer-bottom {
+    padding-bottom: 80px; /* Space for mobile bottom nav */
   }
   
   .mobile-bottom-nav-container {
