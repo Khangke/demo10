@@ -11771,6 +11771,11 @@ select.form-input-compact:disabled {
     max-width: 100%;
   }
   
+  .footer-content-two-cols {
+    width: 100%;
+    max-width: 100%;
+  }
+  
   .footer-section {
     width: 100%;
     max-width: 100%;
