@@ -10242,6 +10242,11 @@ select.form-input-compact:disabled {
     gap: 2.5rem;
   }
   
+  .footer-content-two-cols {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
   .footer-brand h3 {
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
