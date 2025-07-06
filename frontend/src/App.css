@@ -11512,9 +11512,9 @@ select.form-input-compact:disabled {
   }
   
   .footer-content-two-cols {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
     grid-template-columns: none;
   }
   
