@@ -6670,16 +6670,206 @@ select.form-input-compact:disabled {
   }
 }
 
+/* Mobile-first optimization for cart page */
 @media (max-width: 768px) {
+  .cart-page {
+    margin-top: 60px;
+  }
+  
+  .cart-content {
+    padding: 1rem 0;
+  }
+  
   .cart-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   
   .cart-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    gap: 0.5rem;
   }
+  
+  .cart-header h1 ion-icon {
+    font-size: 1.4rem;
+  }
+  
+  .cart-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .cart-sidebar {
+    position: static;
+    order: -1;
+  }
+  
+  .cart-items-header {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+  }
+  
+  .cart-items-header h3 {
+    font-size: 1rem;
+  }
+  
+  .clear-cart-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .cart-item {
+    grid-template-columns: 70px 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .cart-item-image img {
+    width: 70px;
+    height: 60px;
+  }
+  
+  .cart-item-info h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .cart-item-size {
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .cart-item-price .current-price {
+    font-size: 0.9rem;
+  }
+  
+  .cart-item-price .original-price {
+    font-size: 0.8rem;
+  }
+  
+  .cart-item-controls {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    min-width: auto;
+    gap: 0.8rem;
+  }
+  
+  .quantity-controls {
+    gap: 0.3rem;
+  }
+  
+  .quantity-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  
+  .quantity-display {
+    font-size: 0.9rem;
+    min-width: 30px;
+  }
+  
+  .cart-item-total {
+    font-size: 1rem;
+    min-width: auto;
+  }
+  
+  .remove-item-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  
+  .cart-summary-card {
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+  
+  .cart-summary-card h3 {
+    font-size: 1.1rem;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .summary-details {
+    gap: 0.8rem;
+  }
+  
+  .summary-row {
+    font-size: 0.85rem;
+  }
+  
+  .total-row {
+    font-size: 0.95rem;
+  }
+  
+  .checkout-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    gap: 0.4rem;
+  }
+  
+  .continue-shopping-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+  }
+  
+  .cart-benefits {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .cart-benefits h4 {
+    font-size: 0.95rem;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .cart-benefits ul li {
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+    gap: 0.5rem;
+  }
+  
+  .cart-benefits ul li ion-icon {
+    font-size: 0.9rem;
+  }
+  
+  .empty-cart-content {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .empty-cart-content ion-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-cart-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .empty-cart-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .continue-shopping-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+}
   
   .form-grid {
     grid-template-columns: 1fr;
