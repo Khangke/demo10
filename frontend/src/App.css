@@ -11349,39 +11349,40 @@ select.form-input-compact:disabled {
 
 @media (max-width: 480px) {
   .mobile-bottom-nav-container {
-    padding: 0.35rem 0.25rem;
+    padding: 0.3rem 0.15rem;
   }
   
   .mobile-nav-item {
-    padding: 0.35rem 0.15rem;
-    min-width: 40px;
+    padding: 0.3rem 0.1rem;
+    min-width: 38px;
   }
   
   .mobile-nav-icon {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
   }
   
   .mobile-nav-item.active .mobile-nav-icon {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
   
   .mobile-nav-icon-container {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 0.2rem;
+    width: 22px;
+    height: 22px;
+    margin-bottom: 0.15rem;
   }
   
   .mobile-nav-label {
     font-size: 0.55rem;
+    max-width: 50px;
   }
   
   .mobile-nav-badge {
-    font-size: 0.6rem;
-    padding: 0.1rem 0.3rem;
-    min-width: 16px;
-    height: 16px;
-    top: -3px;
-    right: -3px;
+    font-size: 0.55rem;
+    padding: 0.08rem 0.25rem;
+    min-width: 14px;
+    height: 14px;
+    top: -2px;
+    right: -2px;
   }
 }
 
