@@ -285,7 +285,7 @@ body {
   margin: 0;
   padding: 0;
   background: rgba(244, 208, 63, 0.02);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 0.4rem 1rem;
   border: 1px solid rgba(244, 208, 63, 0.08);
   backdrop-filter: blur(10px);
@@ -408,7 +408,7 @@ body {
   color: #1A1A1A;
   border: none;
   padding: 0.7rem 1.2rem;
-  border-radius: 20px;
+  border-radius: 12px;
   font-weight: 600;
   font-size: 0.8rem;
   cursor: pointer;
@@ -725,7 +725,7 @@ body {
 
 .product-card {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -784,7 +784,7 @@ body {
   background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
   color: #1A1A1A;
   padding: 0.4rem 0.9rem;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 600;
   z-index: 10;
@@ -1882,7 +1882,7 @@ select.form-input-compact:disabled {
 
 .order-summary-card-optimized {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid rgba(244, 208, 63, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -1916,7 +1916,7 @@ select.form-input-compact:disabled {
   background: rgba(244, 208, 63, 0.1);
   color: #F4D03F;
   padding: 0.25rem 0.75rem;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -4024,7 +4024,7 @@ select.form-input-compact:disabled {
   background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
   color: #1A1A1A;
   padding: 0.3rem 0.8rem;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -4138,7 +4138,7 @@ select.form-input-compact:disabled {
 /* Sidebar Styles */
 .products-sidebar {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 2rem;
   height: fit-content;
   border: 1px solid rgba(244, 208, 63, 0.1);
@@ -4403,7 +4403,7 @@ select.form-input-compact:disabled {
   text-align: center;
   padding: 2rem;
   background: linear-gradient(135deg, rgba(244, 208, 63, 0.1) 0%, rgba(244, 208, 63, 0.05) 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   border: 1px solid rgba(244, 208, 63, 0.15);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -4728,7 +4728,7 @@ select.form-input-compact:disabled {
   background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
   color: #1A1A1A;
   padding: 0.4rem 0.9rem;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 700;
   z-index: 10;
@@ -5534,7 +5534,7 @@ select.form-input-compact:disabled {
 
 .cart-summary-card {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(244, 208, 63, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -5902,7 +5902,7 @@ select.form-input-compact:disabled {
 
 .checkout-section {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(244, 208, 63, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -6254,7 +6254,7 @@ select.form-input-compact:disabled {
 
 .order-summary-card {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(244, 208, 63, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -6562,7 +6562,7 @@ select.form-input-compact:disabled {
 
 .order-header {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(244, 208, 63, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -6596,7 +6596,7 @@ select.form-input-compact:disabled {
 
 .order-status {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 600;
   display: flex;
@@ -6639,7 +6639,7 @@ select.form-input-compact:disabled {
 
 .info-section {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(244, 208, 63, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -7667,7 +7667,7 @@ select.form-input-compact:disabled {
   align-items: center;
   background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
   border: 1px solid rgba(244, 208, 63, 0.2);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 0.6rem 1rem;
   transition: all 0.3s ease;
   min-width: 280px;
@@ -7982,7 +7982,7 @@ select.form-input-compact:disabled {
   background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
   color: #1A1A1A;
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
@@ -8486,7 +8486,7 @@ select.form-input-compact:disabled {
   background: rgba(244, 208, 63, 0.2);
   color: #F4D03F;
   padding: 0.3rem 0.8rem;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 0.7rem;
   font-weight: 600;
   white-space: nowrap;
@@ -8795,7 +8795,7 @@ select.form-input-compact:disabled {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -10143,7 +10143,7 @@ select.form-input-compact:disabled {
   align-items: center;
   gap: 0;
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   border: 1.5px solid rgba(244, 208, 63, 0.08);
   overflow: hidden;
   width: fit-content;
@@ -11317,7 +11317,7 @@ select.form-input-compact:disabled {
 
 .related-product-card {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
-  border-radius: 20px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -12461,7 +12461,7 @@ select.form-input-compact:disabled {
   
   .promotion-card {
     padding: 1.08rem;
-    border-radius: 20px;
+    border-radius: 12px;
     margin: 0 4px;
   }
   
@@ -12521,7 +12521,7 @@ select.form-input-compact:disabled {
     right: 16px;
     padding: 0.4rem 0.8rem;
     font-size: 0.7rem;
-    border-radius: 20px;
+    border-radius: 12px;
   }
   
   .promo-badge::after {
@@ -12896,7 +12896,7 @@ select.form-input-compact:disabled {
   
   .promotion-card {
     padding: 1.08rem;
-    border-radius: 20px;
+    border-radius: 12px;
     margin: 0 4px;
   }
   
@@ -12956,7 +12956,7 @@ select.form-input-compact:disabled {
     right: 16px;
     padding: 0.4rem 0.8rem;
     font-size: 0.7rem;
-    border-radius: 20px;
+    border-radius: 12px;
   }
   
   .promo-badge::after {
