@@ -16,7 +16,14 @@ const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchExpanded, setSearchExpanded] = useState(false);
 
-  // SEO Data
+  // Categories
+  const categories = [
+    { id: 'all', name: 'Tất Cả', icon: '🌟' },
+    { id: 'ky-nam', name: 'Kỳ Nam', icon: '👑' },
+    { id: 'tu-nhien', name: 'Tự Nhiên', icon: '🌿' },
+    { id: 'truyen-thong', name: 'Truyền Thống', icon: '🔥' },
+    { id: 'sang', name: 'Sáng', icon: '✨' }
+  ];
   const seoData = {
     title: "Trầm Hương Cao Cấp - Sản Phẩm Chất Lượng | Khang Trầm Hương",
     description: "Khám phá các sản phẩm trầm hương cao cấp 100% tự nhiên. Chất lượng vượt trội với giá tốt nhất. Giao hàng toàn quốc, chất lượng đảm bảo.",
