@@ -3249,22 +3249,22 @@ select.form-input-compact:disabled {
   filter: blur(8px);
 }
 
-/* Mobile Optimization - Giảm 30% cho feature icons */
+/* Mobile Optimization - Giảm tiếp 20% cho feature icons */
 @media (max-width: 768px) {
   .feature-icon {
-    font-size: 1.54rem; /* Giảm 30% từ 2.2rem */
-    width: 50.4px; /* Giảm 30% từ 72px */
-    height: 50.4px; /* Giảm 30% từ 72px */
-    box-shadow: 0 5.6px 16.8px rgba(244, 208, 63, 0.25); /* Giảm 30% */
+    font-size: 1.232rem; /* Giảm 20% từ 1.54rem (ban đầu 2.2rem) */
+    width: 40.32px; /* Giảm 20% từ 50.4px (ban đầu 72px) */
+    height: 40.32px; /* Giảm 20% từ 50.4px (ban đầu 72px) */
+    box-shadow: 0 4.48px 13.44px rgba(244, 208, 63, 0.25); /* Giảm 20% từ 5.6px 16.8px */
   }
   
   .feature-icon ion-icon {
-    font-size: 1.4rem; /* Giảm 30% từ 2rem */
+    font-size: 1.12rem; /* Giảm 20% từ 1.4rem (ban đầu 2rem) */
   }
   
   .feature-icon::after {
-    inset: -1.4px; /* Giảm 30% từ -2px */
-    filter: blur(5.6px); /* Giảm 30% từ 8px */
+    inset: -1.12px; /* Giảm 20% từ -1.4px (ban đầu -2px) */
+    filter: blur(4.48px); /* Giảm 20% từ 5.6px (ban đầu 8px) */
   }
 }
 
