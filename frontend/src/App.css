@@ -7663,6 +7663,14 @@ select.form-input-compact:disabled {
   .compact-title {
     font-size: 1.504rem;
   }
+
+  .action-bar {
+    gap: 0.75rem;
+  }
+
+  .search-input-wrapper.show {
+    width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -7681,6 +7689,40 @@ select.form-input-compact:disabled {
   .compact-subtitle {
     font-size: 0.712rem;
   }
+
+  .action-bar {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .action-left,
+  .action-right {
+    justify-content: center;
+  }
+
+  .action-right {
+    gap: 0.5rem;
+  }
+
+  .category-select {
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-input-wrapper.show {
+    width: 180px;
+  }
+
+  .search-input {
+    font-size: 0.8rem;
+  }
+
+  .sort-select {
+    flex: 1;
+    min-width: auto;
+  }
+}
 }
 
 @media (max-width: 480px) {
