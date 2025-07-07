@@ -7174,7 +7174,7 @@ select.form-input-compact:disabled {
 }
 
 .compact-subtitle {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #C0C0C0;
   margin: 0;
   font-weight: 500;
