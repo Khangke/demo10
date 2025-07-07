@@ -3357,6 +3357,19 @@ select.form-input-compact:disabled {
   opacity: 1;
 }
 
+/* Mobile Optimization - Giảm 44% cho review cards */
+@media (max-width: 768px) {
+  .review-card {
+    padding: 1.4rem; /* Giảm 44% từ 2.5rem */
+    border-radius: 13.44px; /* Giảm 44% từ 24px */
+  }
+  
+  .review-card:hover {
+    transform: translateY(-4.48px); /* Giảm 44% từ -8px */
+    box-shadow: 0 8.96px 26.88px rgba(244, 208, 63, 0.06); /* Giảm 44% */
+  }
+}
+
 .review-header {
   display: flex;
   justify-content: space-between;
