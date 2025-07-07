@@ -112,11 +112,16 @@ body {
   position: relative;
 }
 
+/* Logo Styles - Enhanced & Elegant */
 .logo {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 1;
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 .logo:hover h1 {
