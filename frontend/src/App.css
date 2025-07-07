@@ -7191,62 +7191,148 @@ select.form-input-compact:disabled {
   font-weight: 500;
 }
 
-/* Ultra Compact Filters */
+/* Enhanced Filters Section */
 .compact-filters {
-  padding: 1rem 0 0.8rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem 0 1.5rem 0;
+  border-bottom: 1px solid rgba(244, 208, 63, 0.08);
+  position: relative;
+  z-index: 1;
 }
 
 .filter-row {
   display: flex;
-  gap: 0.8rem;
-  margin-bottom: 0.8rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
   align-items: center;
+  justify-content: space-between;
 }
 
+/* Enhanced Search Bar */
 .compact-search {
   flex: 1;
   position: relative;
-  max-width: 200px;
+  max-width: 320px;
+}
+
+.compact-search::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(244, 208, 63, 0.04) 0%, rgba(244, 208, 63, 0.02) 100%);
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.compact-search:hover::before {
+  opacity: 1;
 }
 
 .compact-search ion-icon {
   position: absolute;
-  left: 0.6rem;
+  left: 1rem;
   top: 50%;
   transform: translateY(-50%);
   color: #F4D03F;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 
 .compact-search input {
   width: 100%;
-  padding: 0.4rem 0.6rem 0.4rem 2rem;
-  background: rgba(30, 30, 30, 0.7);
-  border: 1px solid rgba(244, 208, 63, 0.3);
-  border-radius: 15px;
+  padding: 0.75rem 1rem 0.75rem 2.8rem;
+  background: 
+    linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+  border: 1px solid rgba(244, 208, 63, 0.2);
+  border-radius: 20px;
   color: #E8E8E8;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   outline: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 .compact-search input:focus {
   border-color: #F4D03F;
-  box-shadow: 0 0 0 0.1rem rgba(244, 208, 63, 0.2);
+  box-shadow: 
+    0 0 0 3px rgba(244, 208, 63, 0.15),
+    0 4px 16px rgba(244, 208, 63, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%);
+  transform: translateY(-1px);
+}
+
+.compact-search input:focus + ion-icon {
+  color: #F7DC6F;
+  transform: translateY(-50%) scale(1.1);
 }
 
 .compact-search input::placeholder {
-  color: #888;
+  color: #999;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
 }
 
+.compact-search input:focus::placeholder {
+  opacity: 0.7;
+}
+
+/* Enhanced Sort Dropdown */
 .compact-sort {
-  padding: 0.4rem 0.6rem;
-  background: rgba(30, 30, 30, 0.7);
-  border: 1px solid rgba(244, 208, 63, 0.3);
-  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  background: 
+    linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+  border: 1px solid rgba(244, 208, 63, 0.2);
+  border-radius: 16px;
   color: #E8E8E8;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  min-width: 120px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F4D03F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+.compact-sort:hover {
+  border-color: rgba(244, 208, 63, 0.4);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+  transform: translateY(-1px);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(244, 208, 63, 0.08);
+}
+
+.compact-sort:focus {
+  outline: none;
+  border-color: #F4D03F;
+  box-shadow: 
+    0 0 0 3px rgba(244, 208, 63, 0.15),
+    0 4px 16px rgba(244, 208, 63, 0.1);
+}
+
+.compact-sort option {
+  background-color: #2A2A2A;
+  color: #E8E8E8;
+  padding: 0.5rem;
+  font-weight: 500;
+}
   cursor: pointer;
   outline: none;
   transition: all 0.2s ease;
