@@ -3440,6 +3440,18 @@ select.form-input-compact:disabled {
   font-weight: 400;
 }
 
+/* Mobile Optimization - Giảm 44% cho reviewer details */
+@media (max-width: 768px) {
+  .reviewer-details h4 {
+    font-size: 0.588rem; /* Giảm 44% từ 1.05rem */
+    margin-bottom: 0.168rem; /* Giảm 44% từ 0.3rem */
+  }
+  
+  .reviewer-location {
+    font-size: 0.476rem; /* Giảm 44% từ 0.85rem */
+  }
+}
+
 .review-rating {
   color: #F4D03F;
   font-size: 1.1rem;
