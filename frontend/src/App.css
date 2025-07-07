@@ -7271,6 +7271,31 @@ select.form-input-compact:disabled {
   display: flex;
   align-items: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 1;
+}
+
+.search-container.expanded {
+  flex: 1;
+}
+
+.search-toggle {
+  display: none; /* Hide the toggle button */
+}
+
+.search-input-wrapper {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.search-input-wrapper.show {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .search-toggle {
