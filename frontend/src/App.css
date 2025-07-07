@@ -8014,19 +8014,19 @@ select.form-input-compact:disabled {
   }
   
   .rating ion-icon {
-    font-size: 0.42rem;
+    font-size: 0.504rem;
   }
   
   .quick-view {
-    width: 21px;
-    height: 21px;
-    font-size: 0.63rem;
+    width: 25.2px;
+    height: 25.2px;
+    font-size: 0.756rem;
   }
   
   .featured-badge {
-    width: 12.6px;
-    height: 12.6px;
-    font-size: 0.42rem;
+    width: 15.12px;
+    height: 15.12px;
+    font-size: 0.504rem;
   }
 }
 
