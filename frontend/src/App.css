@@ -819,6 +819,24 @@ body {
   font-weight: 400;
 }
 
+/* Mobile Optimization - Giảm 30% font-size và spacing */
+@media (max-width: 768px) {
+  .product-category {
+    font-size: 0.56rem; /* Giảm 30% từ 0.8rem */
+    margin-bottom: 0.49rem; /* Giảm 30% từ 0.7rem */
+  }
+  
+  .product-info h3 {
+    font-size: 0.875rem; /* Giảm 30% từ 1.25rem */
+    margin-bottom: 0.63rem; /* Giảm 30% từ 0.9rem */
+  }
+  
+  .product-description {
+    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    margin-bottom: 0.91rem; /* Giảm 30% từ 1.3rem */
+  }
+}
+
 .product-price {
   margin-bottom: 1rem;
   display: flex;
