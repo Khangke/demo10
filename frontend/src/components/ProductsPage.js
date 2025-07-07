@@ -38,7 +38,6 @@ const ProductsPage = () => {
     {
       id: 1,
       name: "Nguyễn Văn An",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
       rating: 5,
       comment: "Trầm hương chất lượng tuyệt vời! Hương thơm rất đậm đà và tự nhiên. Sẽ quay lại mua tiếp.",
       date: "2 ngày trước",
@@ -48,7 +47,6 @@ const ProductsPage = () => {
     {
       id: 2,
       name: "Trần Thị Bình",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b12a4a1a?w=150&h=150&fit=crop&crop=faces",
       rating: 5,
       comment: "Mình đã sử dụng nhiều loại trầm hương nhưng của shop này thực sự khác biệt. Hương thơm thanh thoát, rất thích hợp cho thiền định.",
       date: "5 ngày trước",
@@ -58,7 +56,6 @@ const ProductsPage = () => {
     {
       id: 3,
       name: "Lê Minh Cường",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces",
       rating: 4,
       comment: "Sản phẩm tốt, đóng gói cẩn thận. Hương thơm tự nhiên, không bị pha trộn. Giá cả hợp lý.",
       date: "1 tuần trước",
@@ -68,7 +65,6 @@ const ProductsPage = () => {
     {
       id: 4,
       name: "Phạm Thị Dung",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=faces",
       rating: 5,
       comment: "Trầm hương truyền thống rất chất lượng! Mình mua làm quà tặng và mọi người đều khen ngợi.",
       date: "1 tuần trước",
@@ -78,7 +74,6 @@ const ProductsPage = () => {
     {
       id: 5,
       name: "Hoàng Văn Đức",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
       rating: 5,
       comment: "Shop tư vấn rất nhiệt tình, sản phẩm đúng như mô tả. Hương thơm nồng nàn, rất đáng tiền!",
       date: "2 tuần trước",
@@ -88,7 +83,6 @@ const ProductsPage = () => {
     {
       id: 6,
       name: "Vũ Thị Hoa",
-      avatar: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=faces",
       rating: 4,
       comment: "Lần đầu mua trầm hương online, ban đầu hơi lo lắng nhưng sản phẩm nhận về rất ok. Sẽ ủng hộ shop lâu dài.",
       date: "2 tuần trước",
