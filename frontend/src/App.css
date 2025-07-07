@@ -7746,8 +7746,10 @@ select.form-input-compact:disabled {
   }
 
   .sort-select {
-    flex: 1;
+    flex: 0 0 auto;
     min-width: auto;
+    width: fit-content;
+    max-width: 100px;
   }
 }
 
