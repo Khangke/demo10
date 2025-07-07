@@ -785,6 +785,13 @@ body {
   padding: 2rem;
 }
 
+/* Mobile Optimization - Giảm 30% cho product-info */
+@media (max-width: 768px) {
+  .product-info {
+    padding: 1.4rem; /* Giảm 30% từ 2rem */
+  }
+}
+
 .product-category {
   color: #F4D03F;
   font-size: 0.8rem;
