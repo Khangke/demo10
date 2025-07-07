@@ -54,7 +54,7 @@ const Header = () => {
             <ul>
               <li><Link to="/" className={isActive('/') ? 'active' : ''}>Trang Chủ</Link></li>
               <li><Link to="/products" className={isActive('/products') ? 'active' : ''}>Sản Phẩm</Link></li>
-              <li><a href="#about">Giới Thiệu</a></li>
+              <li><Link to="/about" className={isActive('/about') ? 'active' : ''}>Giới Thiệu</Link></li>
               <li><a href="#news">Tin Tức</a></li>
               <li><a href="#contact">Liên Hệ</a></li>
             </ul>
