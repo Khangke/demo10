@@ -87,7 +87,7 @@ const Header = () => {
             <ul>
               <li><Link to="/" onClick={toggleMobileMenu}>Trang Chủ</Link></li>
               <li><Link to="/products" onClick={toggleMobileMenu}>Sản Phẩm</Link></li>
-              <li><a href="#about" onClick={toggleMobileMenu}>Giới Thiệu</a></li>
+              <li><Link to="/about" onClick={toggleMobileMenu}>Giới Thiệu</Link></li>
               <li><a href="#news" onClick={toggleMobileMenu}>Tin Tức</a></li>
               <li><a href="#contact" onClick={toggleMobileMenu}>Liên Hệ</a></li>
               <li><Link to="/cart" onClick={toggleMobileMenu}>Giỏ Hàng ({cartCount})</Link></li>
