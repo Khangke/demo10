@@ -7810,42 +7810,49 @@ select.form-input-compact:disabled {
 
 @media (max-width: 480px) {
   .compact-header {
-    padding: 1.2rem 0;
+    padding: 0.84rem 0;
   }
   
   .compact-title {
-    font-size: 1.4rem;
+    font-size: 0.98rem;
   }
   
   .compact-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.56rem;
   }
   
   .compact-filters {
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.05rem 0 0.7rem 0;
   }
   
   .compact-search input {
-    font-size: 0.85rem;
-    padding: 0.75rem 0.9rem 0.75rem 2.8rem;
+    font-size: 0.595rem;
+    padding: 0.525rem 0.63rem 0.525rem 1.96rem;
   }
   
   .compact-search ion-icon {
-    left: 0.9rem;
-    font-size: 1rem;
+    left: 0.63rem;
+    font-size: 0.7rem;
   }
   
   .compact-sort {
-    font-size: 0.8rem;
-    padding: 0.75rem 0.9rem;
-    padding-right: 2.2rem;
+    font-size: 0.56rem;
+    padding: 0.525rem 0.63rem;
+  }
+  
+  .category-pills {
+    gap: 0.35rem;
   }
   
   .category-pills .pill {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.75rem;
-    border-radius: 16px;
+    padding: 0.28rem 0.56rem;
+    font-size: 0.455rem;
   }
+  
+  .category-pills .pill span[role="img"] {
+    font-size: 0.49rem;
+  }
+}
   
   .category-pills .pill[data-hot="true"]::after {
     font-size: 0.55rem;
