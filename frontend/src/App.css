@@ -7267,22 +7267,27 @@ select.form-input-compact:disabled {
 
 /* Search Container */
 .search-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 0;
 }
 
-.search-container.expanded {
-  flex: 1;
+.search-input-wrapper.show {
+  width: 200px;
+  position: relative;
+  margin-left: 0.5rem;
 }
 
 .search-toggle {
-  background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
-  border: 1px solid rgba(244, 208, 63, 0.2);
-  border-radius: 12px;
-  padding: 0.6rem;
-  color: #E8E8E8;
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.sort-select {
+  flex: 0 0 auto;
+  min-width: auto;
+  width: fit-content;
+  max-width: 100px;
+}
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
