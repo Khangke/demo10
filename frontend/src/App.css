@@ -3118,6 +3118,13 @@ select.form-input-compact:disabled {
   background: linear-gradient(90deg, transparent, rgba(244, 208, 63, 0.3), transparent);
 }
 
+/* Mobile Optimization - Giảm 30% cho Why Choose Us section */
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4.9rem 0; /* Giảm 30% từ 7rem */
+  }
+}
+
 .why-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
