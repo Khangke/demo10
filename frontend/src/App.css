@@ -13602,7 +13602,7 @@ select.form-input-compact:disabled {
   
   /* Add padding to footer bottom to account for mobile nav */
   .footer-bottom {
-    padding-bottom: 80px; /* Space for mobile bottom nav */
+    padding-bottom: 90px !important; /* Space for mobile bottom nav */
   }
   
   .mobile-bottom-nav-container {
