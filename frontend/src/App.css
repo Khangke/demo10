@@ -7622,7 +7622,7 @@ select.form-input-compact:disabled {
 }
 
 .old-price {
-  font-size: 0.7rem;
+  font-size: 0.84rem;
   color: #888;
   text-decoration: line-through;
   line-height: 1;
