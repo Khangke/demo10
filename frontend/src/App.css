@@ -3203,17 +3203,17 @@ select.form-input-compact:disabled {
   opacity: 1;
 }
 
-/* Mobile Optimization - Giảm 30% cho feature items */
+/* Mobile Optimization - Giảm tiếp 20% cho feature items */
 @media (max-width: 768px) {
   .feature-item {
-    gap: 1.4rem; /* Giảm 30% từ 2rem */
-    padding: 1.75rem; /* Giảm 30% từ 2.5rem */
-    border-radius: 16.8px; /* Giảm 30% từ 24px */
+    gap: 1.12rem; /* Giảm 20% từ 1.4rem (ban đầu 2rem) */
+    padding: 1.4rem; /* Giảm 20% từ 1.75rem (ban đầu 2.5rem) */
+    border-radius: 13.44px; /* Giảm 20% từ 16.8px (ban đầu 24px) */
   }
   
   .feature-item:hover {
-    transform: translateY(-5.6px); /* Giảm 30% từ -8px */
-    box-shadow: 0 11.2px 33.6px rgba(244, 208, 63, 0.08); /* Giảm 30% */
+    transform: translateY(-4.48px); /* Giảm 20% từ -5.6px (ban đầu -8px) */
+    box-shadow: 0 8.96px 26.88px rgba(244, 208, 63, 0.08); /* Giảm 20% từ 11.2px 33.6px */
   }
 }
 
