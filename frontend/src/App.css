@@ -847,7 +847,7 @@ body {
   .quick-view-btn {
     padding: 0.525rem 1.26rem; /* Giảm 30% từ 0.75rem 1.8rem */
     border-radius: 17.5px; /* Giảm 30% từ 25px */
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     box-shadow: 0 2.8px 11.2px rgba(244, 208, 63, 0.3); /* Giảm 30% */
   }
 }
@@ -904,11 +904,11 @@ body {
   
   .product-info h3 {
     font-size: 0.875rem; /* Giảm 30% từ 1.25rem */
-    margin-bottom: 0.63rem; /* Giảm 30% từ 0.9rem */
+    margin-bottom: 0.63rem; /* Giảm 40% từ 0.63rem */
   }
   
   .product-description {
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     margin-bottom: 0.91rem; /* Giảm 40% từ 0.91rem */
   }
 }
@@ -982,12 +982,12 @@ body {
   }
   
   .stars {
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     margin-bottom: 0.14rem; /* Giảm 30% từ 0.2rem */
   }
   
   .product-rating .stars ion-icon {
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
   }
   
   .rating-text {
@@ -1015,9 +1015,9 @@ body {
 /* Mobile Optimization - Giảm 30% cho add-to-cart-btn */
 @media (max-width: 768px) {
   .add-to-cart-btn {
-    padding: 0.63rem 1.26rem; /* Giảm 30% từ 0.9rem 1.8rem */
+    padding: 0.63rem 1.26rem; /* Giảm 40% từ 0.63rem 1.8rem */
     border-radius: 17.5px; /* Giảm 30% từ 25px */
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     box-shadow: 0 1.4px 5.6px rgba(244, 208, 63, 0.15); /* Giảm 30% */
   }
 }
@@ -12180,7 +12180,7 @@ select.form-input-compact:disabled {
   }
   
   .promo-content p {
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     margin-bottom: 0.63rem; /* Giảm 30% từ 1.5rem */
   }
   
@@ -12195,7 +12195,7 @@ select.form-input-compact:disabled {
   
   .timer-unit {
     min-width: 24px; /* Giảm 30% từ 58px */
-    padding: 0.38rem 0.21rem; /* Giảm 30% từ 0.9rem 0.5rem */
+    padding: 0.38rem 0.21rem; /* Giảm 40% từ 0.63rem 0.5rem */
     font-size: 0.4rem; /* Giảm 30% từ 0.95rem */
   }
   
@@ -12211,7 +12211,7 @@ select.form-input-compact:disabled {
   
   .promo-btn {
     padding: 0.46rem 0.63rem; /* Giảm 30% từ 1.1rem 1.5rem */
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     min-height: 22px; /* Giảm 30% từ 52px */
     min-width: 67px; /* Giảm 30% từ 160px */
   }
@@ -12693,7 +12693,7 @@ select.form-input-compact:disabled {
   }
   
   .promo-content p {
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     margin-bottom: 0.63rem; /* Giảm 30% từ 1.5rem */
   }
   
@@ -12708,7 +12708,7 @@ select.form-input-compact:disabled {
   
   .timer-unit {
     min-width: 24px; /* Giảm 30% từ 58px */
-    padding: 0.38rem 0.21rem; /* Giảm 30% từ 0.9rem 0.5rem */
+    padding: 0.38rem 0.21rem; /* Giảm 40% từ 0.63rem 0.5rem */
     font-size: 0.4rem; /* Giảm 30% từ 0.95rem */
   }
   
@@ -12724,7 +12724,7 @@ select.form-input-compact:disabled {
   
   .promo-btn {
     padding: 0.46rem 0.63rem; /* Giảm 30% từ 1.1rem 1.5rem */
-    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
     min-height: 22px; /* Giảm 30% từ 52px */
     min-width: 67px; /* Giảm 30% từ 160px */
   }
