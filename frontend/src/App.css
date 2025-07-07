@@ -718,7 +718,7 @@ body {
   margin-top: 2rem;
 }
 
-/* Mobile Optimization cho Headings - Tối ưu căn giữa hoàn hảo */
+/* Mobile Optimization cho Headings - FORCE căn giữa cực mạnh */
 @media (max-width: 768px) {
   .featured-products {
     padding: 2.52rem 0; /* Giảm 40% từ 4.2rem */
@@ -730,16 +730,19 @@ body {
     margin-top: 1.4rem; /* Giảm 40% từ 1.4rem */
   }
 
-  /* Tối ưu căn giữa cho mobile */
+  /* FORCE căn giữa siêu mạnh cho mobile */
   .section-header {
     text-align: center !important;
-    padding: 0 0.5rem;
-    margin-bottom: 3rem;
+    padding: 0 0.5rem !important;
+    margin: 0 auto 3rem auto !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
   }
   
   .section-header h2 {
@@ -747,11 +750,15 @@ body {
     line-height: 1.2 !important;
     text-align: center !important;
     margin: 0 auto 1rem auto !important;
-    padding: 0 !important;
+    padding: 0 0.25rem !important;
     width: 100% !important;
     max-width: 100% !important;
-    word-wrap: break-word;
-    hyphens: auto;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
+    transform: translateX(0) !important;
   }
   
   .section-header p {
@@ -762,9 +769,13 @@ body {
     padding: 0 0.5rem !important;
     width: 100% !important;
     max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
+    transform: translateX(0) !important;
   }
 
-  /* Hero optimizations for mobile */
+  /* Hero optimizations for mobile - FORCE */
   .hero-content {
     padding: 1rem !important;
     text-align: center !important;
@@ -773,6 +784,10 @@ body {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
+    margin: 0 auto !important;
   }
   
   .hero-content h1 {
@@ -780,11 +795,15 @@ body {
     line-height: 1.1 !important;
     text-align: center !important;
     margin: 0 auto 1.5rem auto !important;
-    padding: 0 !important;
+    padding: 0 0.25rem !important;
     width: 100% !important;
     max-width: 100% !important;
-    word-wrap: break-word;
-    hyphens: auto;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
+    transform: translateX(0) !important;
   }
   
   .hero-content p {
@@ -795,14 +814,43 @@ body {
     padding: 0 0.5rem !important;
     width: 100% !important;
     max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
+    transform: translateX(0) !important;
   }
 
-  /* Force center cho tất cả h1, h2, h3 trên mobile */
-  h1, h2, h3 {
+  /* FORCE center cho TẤT CẢ headings trên mobile */
+  h1, h2, h3, h4, h5, h6 {
     text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
     width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
+    transform: translateX(0) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Force cho tất cả sections */
+  section {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* Fix cho container */
+  .container {
+    width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
   }
 }
 
