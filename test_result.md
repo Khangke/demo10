@@ -277,18 +277,18 @@ test_plan:
     - "Order Management API endpoints"
     - "Tối ưu phần thanh toán cho gọn gàng và đẹp mắt hơn với layer nhỏ và chuẩn SEO"
 
-  - task: "Xóa phần bộ sưu tập, thanh tìm kiếm và danh mục trong trang sản phẩm"
+  - task: "Xóa hoàn toàn phần header Trầm Hương Khang trong trang sản phẩm"
     implemented: true
     working: true
-    file: "/app/frontend/src/components/ProductsPage.js, /app/frontend/src/App.css"
+    file: "/app/frontend/src/components/ProductsPage.js"
     stuck_count: 0
     priority: "high"
     needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
-          comment: "ĐÃ HOÀN THÀNH XÓA CÁC PHẦN THEO YÊU CẦU! Thực hiện: 1) BỘ SƯU TẬP: Đổi title từ 'Bộ Sưu Tập Trầm Hương' thành 'Trầm Hương Khang' để loại bỏ concept bộ sưu tập. 2) THANH TÌM KIẾM: Xóa hoàn toàn compact-search input và related CSS. Loại bỏ searchQuery state và filter logic. 3) DANH MỤC: Xóa hoàn toàn category-pills (Tất Cả, Kỳ Nam, Tự Nhiên, Truyền Thống, Sáng). Loại bỏ selectedCategory state và categories array. Xóa category filter logic. 4) CSS CLEANUP: Xóa tất cả CSS cho .compact-filters, .compact-search, .category-pills, scrollbar styles và responsive CSS. 5) SIMPLIFIED LOGIC: Giữ lại chỉ sortBy functionality, hiển thị trực tiếp 'Tất Cả Sản Phẩm'. Kết quả: Trang sản phẩm giờ có giao diện đơn giản, gọn gàng, hiển thị trực tiếp tất cả sản phẩm mà không có search/filter/category features."
+          comment: "ĐÃ XÓA HOÀN TOÀN HEADER THEO YÊU CẦU! Thực hiện: 1) XÓA COMPACT-HEADER: Loại bỏ hoàn toàn div compact-header chứa title 'Trầm Hương Khang' và subtitle 'Sản phẩm tự nhiên cao cấp'. 2) XÓA TRONG ERROR STATE: Cũng xóa header trong error state để consistency. 3) MARGIN ADJUSTMENT: Thêm marginTop: '80px' để compensate cho việc mất header và tránh content bị che bởi main header. 4) ULTRA MINIMALIST: Giờ trang sản phẩm chỉ hiển thị trực tiếp 'Tất Cả Sản Phẩm' và product grid mà không có bất kỳ header/title nào khác. Kết quả: Trang products có layout cực kỳ clean, minimalist, chỉ focus vào việc hiển thị products."
 
 agent_communication:
     - agent: "main"
-      message: "🎯 ĐÃ HOÀN THÀNH XÓA CÁC PHẦN THEO YÊU CẦU USER! Thực hiện theo yêu cầu 'xóa phần bộ sưu tập và thanh tìm kiến và danh mục': 1) XÓA BỘ SƯU TẬP: Thay đổi title từ 'Bộ Sưu Tập Trầm Hương' thành 'Trầm Hương Khang', loại bỏ concept collection/bộ sưu tập. 2) XÓA THANH TÌM KIẾM: Hoàn toàn remove search input, compact-search CSS, searchQuery state và search filter logic. 3) XÓA DANH MỤC: Hoàn toàn remove category pills (Tất Cả, Kỳ Nam, Tự Nhiên, Truyền Thống, Sáng), categories array, selectedCategory state và category filter logic. 4) CLEAN UP CSS: Remove tất cả CSS cho compact-filters, compact-search, category-pills, hotPulse animation, scrollbar styles, và responsive breakpoints related. 5) SIMPLIFIED DISPLAY: Giờ chỉ hiển thị đơn giản 'Tất Cả Sản Phẩm' với tất cả products, vẫn giữ sort functionality. Kết quả: Trang products page giờ có giao diện minimalist, clean, chỉ hiển thị products grid và customer reviews mà không có các filtering/searching features."
+      message: "✅ ĐÃ XÓA HOÀN TOÀN HEADER 'TRẦM HƯƠNG KHANG'! Thực hiện theo yêu cầu 'bỏ phần trầm hương khang luôn': 1) REMOVE COMPACT-HEADER: Xóa hoàn toàn phần compact-header div chứa h1 'Trầm Hương Khang' và p 'Sản phẩm tự nhiên cao cấp'. 2) CONSISTENCY: Cũng xóa header trong error state để đảm bảo consistency. 3) SPACING ADJUSTMENT: Thêm inline style marginTop: '80px' để compensate cho việc không còn header và avoid content overlap với main navigation. 4) RESULT: Trang products giờ có layout ultra-minimalist, chỉ hiển thị 'Tất Cả Sản Phẩm' với product grid và customer reviews, không có bất kỳ page title/subtitle nào. Layout cực kỳ clean và focused vào products."
