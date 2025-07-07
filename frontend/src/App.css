@@ -716,6 +716,18 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* Mobile Optimization - Giảm 30% cho badge */
+@media (max-width: 768px) {
+  .product-badge {
+    top: 0.7rem; /* Giảm 30% từ 1rem */
+    right: 0.7rem; /* Giảm 30% từ 1rem */
+    padding: 0.28rem 0.63rem; /* Giảm 30% từ 0.4rem 0.9rem */
+    border-radius: 14px; /* Giảm 30% từ 20px */
+    font-size: 0.525rem; /* Giảm 30% từ 0.75rem */
+    box-shadow: 0 2.8px 8.4px rgba(244, 208, 63, 0.3); /* Giảm 30% */
+  }
+}
+
 .product-overlay {
   position: absolute;
   top: 0;
