@@ -5,6 +5,28 @@
   box-sizing: border-box;
 }
 
+/* EXTREME MOBILE CENTER OVERRIDE - Cao nhất priority */
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+}
+
 /* Completely disable zoom and horizontal scroll - only vertical scroll allowed */
 html {
   touch-action: pan-y;
