@@ -659,6 +659,14 @@ body {
   cursor: pointer;
 }
 
+/* Mobile Optimization - Giảm 30% cho product card */
+@media (max-width: 768px) {
+  .product-card {
+    border-radius: 14px; /* Giảm 30% từ 20px */
+    box-shadow: 0 5.6px 22.4px rgba(0, 0, 0, 0.4); /* Giảm 30% */
+  }
+}
+
 .product-card-link:hover .product-card,
 .product-card:hover {
   transform: translateY(-4px) scale(1);
