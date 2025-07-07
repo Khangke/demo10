@@ -718,7 +718,7 @@ body {
   margin-top: 2rem;
 }
 
-/* Mobile Optimization - Giảm 30% kích thước cho mobile */
+/* Mobile Optimization cho Headings - Tối ưu căn giữa hoàn hảo */
 @media (max-width: 768px) {
   .featured-products {
     padding: 2.52rem 0; /* Giảm 40% từ 4.2rem */
@@ -728,6 +728,81 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(238px, 1fr)); /* Giảm 30% từ 340px */
     gap: 0.84rem; /* Giảm 40% từ 1.4rem */
     margin-top: 1.4rem; /* Giảm 40% từ 1.4rem */
+  }
+
+  /* Tối ưu căn giữa cho mobile */
+  .section-header {
+    text-align: center !important;
+    padding: 0 0.5rem;
+    margin-bottom: 3rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    margin: 0 auto 1rem auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Hero optimizations for mobile */
+  .hero-content {
+    padding: 1rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+    margin: 0 auto 1.5rem auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  .hero-content p {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    margin: 0 auto 2rem auto !important;
+    padding: 0 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Force center cho tất cả h1, h2, h3 trên mobile */
+  h1, h2, h3 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
   }
 }
 
