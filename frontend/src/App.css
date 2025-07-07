@@ -6870,7 +6870,8 @@ select.form-input-compact:disabled {
     gap: 8px;
   }
 }
-  
+
+@media (max-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr;
   }
