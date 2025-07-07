@@ -705,7 +705,7 @@ body {
   
   .products-grid {
     grid-template-columns: repeat(auto-fit, minmax(238px, 1fr)); /* Giảm 30% từ 340px */
-    gap: 1.4rem; /* Giảm 30% từ 2rem */
+    gap: 0.84rem; /* Giảm 30% từ 2rem */
     margin-top: 1.4rem; /* Giảm 30% từ 2rem */
   }
 }
@@ -3240,7 +3240,7 @@ select.form-input-compact:disabled {
   }
   
   .why-features {
-    gap: 1.4rem; /* Giảm 20% từ 1.75rem (ban đầu 2.5rem) */
+    gap: 0.84rem; /* Giảm 20% từ 1.75rem (ban đầu 2.5rem) */
   }
 }
 
@@ -3396,7 +3396,7 @@ select.form-input-compact:disabled {
 @media (max-width: 768px) {
   .reviews-grid {
     grid-template-columns: repeat(auto-fit, minmax(179.2px, 1fr)); /* Giảm 44% từ 320px */
-    gap: 1.4rem; /* Giảm 44% từ 2.5rem */
+    gap: 0.84rem; /* Giảm 44% từ 2.5rem */
     margin-bottom: 2.24rem; /* Giảm 44% từ 4rem */
   }
 }
@@ -12166,7 +12166,7 @@ select.form-input-compact:disabled {
   
   .promotions-grid {
     grid-template-columns: 1fr;
-    gap: 1.4rem; /* Giảm 30% từ 2rem */
+    gap: 0.84rem; /* Giảm 30% từ 2rem */
   }
   
   .promotion-card {
@@ -12679,7 +12679,7 @@ select.form-input-compact:disabled {
   
   .promotions-grid {
     grid-template-columns: 1fr;
-    gap: 1.4rem; /* Giảm 30% từ 2rem */
+    gap: 0.84rem; /* Giảm 30% từ 2rem */
   }
   
   .promotion-card {
