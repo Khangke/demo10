@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Build a Vietnamese e-commerce website for selling agarwood products (trầm hương) with dark theme, luxurious design, mobile-optimized, and SEO-friendly. Focus on homepage with hero banner, product grid, and elegant styling. LATEST REQUEST: xóa phần bộ sưu tập và thanh tìm kiến và danh mục"
+user_problem_statement: "Build a Vietnamese e-commerce website for selling agarwood products (trầm hương) with dark theme, luxurious design, mobile-optimized, and SEO-friendly. Focus on homepage with hero banner, product grid, and elegant styling. LATEST REQUEST: bỏ phần trầm hương khang luôn"
 
 backend:
   - task: "Product API endpoints"
