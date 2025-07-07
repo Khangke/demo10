@@ -650,9 +650,14 @@ body {
 
 /* Section Header */
 .section-header {
-  text-align: center;
+  text-align: center !important;
   margin-bottom: 5rem;
   padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-header h2 {
@@ -662,6 +667,10 @@ body {
   text-shadow: 0 2px 12px rgba(244, 208, 63, 0.3);
   font-weight: 700;
   letter-spacing: -0.01em;
+  text-align: center !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-header p {
@@ -671,6 +680,8 @@ body {
   margin: 0 auto;
   line-height: 1.7;
   font-weight: 400;
+  text-align: center !important;
+  width: 100%;
 }
 
 /* Featured Products */
