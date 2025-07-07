@@ -137,12 +137,12 @@ body {
 .logo::before {
   content: '';
   position: absolute;
-  top: -10px;
-  left: -20px;
-  right: -20px;
-  bottom: -10px;
-  background: rgba(244, 208, 63, 0.03);
-  border-radius: 15px;
+  top: -8px;
+  left: -16px;
+  right: -16px;
+  bottom: -8px;
+  background: rgba(244, 208, 63, 0.04);
+  border-radius: 12px;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1;
