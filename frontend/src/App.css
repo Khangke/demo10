@@ -621,6 +621,19 @@ body {
   margin-top: 2rem;
 }
 
+/* Mobile Optimization - Giảm 30% kích thước cho mobile */
+@media (max-width: 768px) {
+  .featured-products {
+    padding: 4.2rem 0; /* Giảm 30% từ 6rem */
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr)); /* Giảm 30% từ 340px */
+    gap: 1.4rem; /* Giảm 30% từ 2rem */
+    margin-top: 1.4rem; /* Giảm 30% từ 2rem */
+  }
+}
+
 /* Product Card Link Wrapper */
 .product-card-link {
   text-decoration: none;
