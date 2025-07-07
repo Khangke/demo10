@@ -3412,6 +3412,20 @@ select.form-input-compact:disabled {
   color: #1A1A1A;
 }
 
+/* Mobile Optimization - Giảm 44% cho reviewer avatar */
+@media (max-width: 768px) {
+  .reviewer-avatar {
+    width: 29.12px; /* Giảm 44% từ 52px */
+    height: 29.12px; /* Giảm 44% từ 52px */
+    font-size: 0.784rem; /* Giảm 44% từ 1.4rem */
+    box-shadow: 0 2.24px 8.96px rgba(244, 208, 63, 0.25); /* Giảm 44% */
+  }
+  
+  .reviewer-avatar ion-icon {
+    font-size: 0.672rem; /* Giảm 44% từ 1.2rem */
+  }
+}
+
 .reviewer-details h4 {
   color: #F4D03F;
   font-size: 1.05rem;
