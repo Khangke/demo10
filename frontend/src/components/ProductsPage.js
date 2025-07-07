@@ -36,6 +36,7 @@ const ProductsPage = () => {
     {
       id: 1,
       name: "Nguyễn Văn An",
+      location: "Hà Nội",
       rating: 5,
       comment: "Trầm hương chất lượng tuyệt vời! Hương thơm rất đậm đà và tự nhiên. Sẽ quay lại mua tiếp.",
       date: "2 ngày trước",
@@ -45,6 +46,7 @@ const ProductsPage = () => {
     {
       id: 2,
       name: "Trần Thị Bình",
+      location: "TP. Hồ Chí Minh",
       rating: 5,
       comment: "Mình đã sử dụng nhiều loại trầm hương nhưng của shop này thực sự khác biệt. Hương thơm thanh thoát, rất thích hợp cho thiền định.",
       date: "5 ngày trước",
@@ -54,6 +56,7 @@ const ProductsPage = () => {
     {
       id: 3,
       name: "Lê Minh Cường",
+      location: "Đà Nẵng",
       rating: 4,
       comment: "Sản phẩm tốt, đóng gói cẩn thận. Hương thơm tự nhiên, không bị pha trộn. Giá cả hợp lý.",
       date: "1 tuần trước",
@@ -63,29 +66,12 @@ const ProductsPage = () => {
     {
       id: 4,
       name: "Phạm Thị Dung",
+      location: "Hải Phòng",
       rating: 5,
-      comment: "Trầm hương truyền thống rất chất lượng! Mình mua làm quà tặng và mọi người đều khen ngợi.",
-      date: "1 tuần trước",
-      product: "Trầm Hương Truyền Thống",
-      verified: true
-    },
-    {
-      id: 5,
-      name: "Hoàng Văn Đức",
-      rating: 5,
-      comment: "Shop tư vấn rất nhiệt tình, sản phẩm đúng như mô tả. Hương thơm nồng nàn, rất đáng tiền!",
+      comment: "Dịch vụ chăm sóc khách hàng tuyệt vời. Sản phẩm chất lượng, giao hàng nhanh chóng. Rất hài lòng!",
       date: "2 tuần trước",
-      product: "Trầm Hương Kỳ Nam",
+      product: "Trầm Hương Cao Cấp",
       verified: true
-    },
-    {
-      id: 6,
-      name: "Vũ Thị Hoa",
-      rating: 4,
-      comment: "Lần đầu mua trầm hương online, ban đầu hơi lo lắng nhưng sản phẩm nhận về rất ok. Sẽ ủng hộ shop lâu dài.",
-      date: "2 tuần trước",
-      product: "Trầm Hương Sáng",
-      verified: false
     }
   ];
 
