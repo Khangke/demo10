@@ -260,34 +260,25 @@ const ProductsPage = () => {
           </div>
 
           <div className="action-right">
-            {/* Search Toggle with Icon */}
-            <div className={`search-container ${searchExpanded ? 'expanded' : ''}`}>
-              <button
-                className="search-toggle"
-                onClick={() => setSearchExpanded(!searchExpanded)}
-                aria-label="Tìm kiếm"
-              >
-                <ion-icon name="search-outline"></ion-icon>
-              </button>
-              <div className={`search-input-wrapper ${searchExpanded ? 'show' : ''}`}>
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm sản phẩm..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="search-input"
-                  autoFocus={searchExpanded}
-                />
-                {searchQuery && (
-                  <button
-                    className="search-clear"
-                    onClick={() => setSearchQuery('')}
-                    aria-label="Xóa tìm kiếm"
-                  >
-                    <ion-icon name="close-outline"></ion-icon>
-                  </button>
-                )}
-              </div>
+            {/* Simple Search Bar */}
+            <div className="search-bar">
+              <ion-icon name="search-outline" className="search-icon"></ion-icon>
+              <input
+                type="text"
+                placeholder="Tìm kiếm sản phẩm..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="search-input-simple"
+              />
+              {searchQuery && (
+                <button
+                  className="search-clear-simple"
+                  onClick={() => setSearchQuery('')}
+                  aria-label="Xóa tìm kiếm"
+                >
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              )}
             </div>
 
             {/* Sort Dropdown */}
