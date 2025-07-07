@@ -12171,7 +12171,7 @@ select.form-input-compact:disabled {
   
   .promotion-card {
     padding: 0.84rem; /* Giảm 40% từ 1.4rem */
-    border-radius: 10px; /* Giảm 30% từ 24px */
+    border-radius: 10px; /* Giảm 40% từ 16.8px */
   }
   
   .promo-content h3 {
@@ -12684,7 +12684,7 @@ select.form-input-compact:disabled {
   
   .promotion-card {
     padding: 0.84rem; /* Giảm 40% từ 1.4rem */
-    border-radius: 10px; /* Giảm 30% từ 24px */
+    border-radius: 10px; /* Giảm 40% từ 16.8px */
   }
   
   .promo-content h3 {
