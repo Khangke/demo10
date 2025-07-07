@@ -365,27 +365,30 @@ body {
   left: 100%;
 }
 
-/* Mobile Menu */
+/* Mobile Menu - Enhanced */
 .mobile-menu-btn {
   display: none;
   flex-direction: column;
-  background: none;
-  border: none;
+  background: rgba(244, 208, 63, 0.05);
+  border: 1px solid rgba(244, 208, 63, 0.1);
   cursor: pointer;
   padding: 8px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .mobile-menu-btn:hover {
-  background-color: rgba(244, 208, 63, 0.1);
+  background: rgba(244, 208, 63, 0.12);
+  border-color: rgba(244, 208, 63, 0.2);
+  transform: translateY(-1px);
 }
 
 .mobile-menu-btn span {
-  width: 24px;
+  width: 20px;
   height: 2px;
   background: #F4D03F;
-  margin: 3px 0;
+  margin: 2px 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
 }
@@ -396,15 +399,17 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.97);
+  background: rgba(0, 0, 0, 0.98);
   border-top: 1px solid rgba(244, 208, 63, 0.15);
   backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 16px 16px;
 }
 
 .mobile-nav ul {
   list-style: none;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+  margin: 0;
 }
 
 .mobile-nav li {
@@ -415,11 +420,24 @@ body {
   color: #D1D1D1;
   text-decoration: none;
   font-weight: 500;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   display: block;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-left: 3px solid transparent;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.mobile-nav a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(244, 208, 63, 0.05);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .mobile-nav a:hover {
@@ -427,6 +445,10 @@ body {
   color: #F4D03F;
   border-left-color: #F4D03F;
   transform: translateX(8px);
+}
+
+.mobile-nav a:hover::before {
+  opacity: 1;
 }
 
 /* Hero Section */
