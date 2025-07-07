@@ -3151,20 +3151,20 @@ select.form-input-compact:disabled {
   gap: 2.5rem;
 }
 
-/* Mobile Optimization - Giảm 30% cho content layout */
+/* Mobile Optimization - Giảm tiếp 20% cho content layout */
 @media (max-width: 768px) {
   .why-content {
     grid-template-columns: 1fr; /* Chuyển thành 1 cột trên mobile */
-    gap: 3.5rem; /* Giảm 30% từ 5rem */
+    gap: 2.8rem; /* Giảm 20% từ 3.5rem (ban đầu 5rem) */
   }
   
   .why-image img {
-    border-radius: 16.8px; /* Giảm 30% từ 24px */
-    box-shadow: 0 11.2px 33.6px rgba(0, 0, 0, 0.4); /* Giảm 30% */
+    border-radius: 13.44px; /* Giảm 20% từ 16.8px (ban đầu 24px) */
+    box-shadow: 0 8.96px 26.88px rgba(0, 0, 0, 0.4); /* Giảm 20% từ 11.2px 33.6px */
   }
   
   .why-features {
-    gap: 1.75rem; /* Giảm 30% từ 2.5rem */
+    gap: 1.4rem; /* Giảm 20% từ 1.75rem (ban đầu 2.5rem) */
   }
 }
 
