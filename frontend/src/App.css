@@ -7740,19 +7740,19 @@ select.form-input-compact:disabled {
 
 @media (max-width: 768px) {
   .compact-products-page {
-    margin-top: 42px;
+    margin-top: 47px;
   }
   
   .compact-header {
-    padding: 1.05rem 0;
+    padding: 1.187rem 0;
   }
   
   .compact-title {
-    font-size: 1.12rem;
+    font-size: 1.266rem;
   }
   
   .compact-subtitle {
-    font-size: 0.63rem;
+    font-size: 0.712rem;
   }
   
   .filter-row {
