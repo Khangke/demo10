@@ -7922,7 +7922,6 @@ select.form-input-compact:disabled {
     height: 18px;
     font-size: 0.6rem;
   }
-}
 
 @media (max-width: 480px) {
   .compact-header {
