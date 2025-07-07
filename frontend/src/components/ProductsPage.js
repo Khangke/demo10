@@ -259,52 +259,10 @@ const ProductsPage = () => {
       </div>
 
       <div className="container">
-        {/* Ultra Compact Filters */}
-        <div className="compact-filters">
-          {/* Search and Sort */}
-          <div className="filter-row">
-            <div className="compact-search">
-              <ion-icon name="search-outline"></ion-icon>
-              <input
-                type="text"
-                placeholder="Tìm kiếm..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                maxLength={100}
-              />
-            </div>
-            <select
-              className="compact-sort"
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-            >
-              <option value="newest">Mới nhất</option>
-              <option value="price-low">Giá thấp</option>
-              <option value="price-high">Giá cao</option>
-              <option value="name">Tên A-Z</option>
-            </select>
-          </div>
-
-          {/* Category Pills */}
-          <div className="category-pills">
-            {categories.map(category => (
-              <button
-                key={category.id}
-                className={`pill ${selectedCategory === category.id ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(category.id)}
-                type="button"
-                data-hot={category.hot ? "true" : "false"}
-              >
-                <span role="img" aria-label={category.name}>{category.icon}</span> {category.name}
-              </button>
-            ))}
-          </div>
-        </div>
-
         {/* Products Section */}
         <div className="products-section">
           <div className="section-info">
-            <h2>{selectedCategory === 'all' ? 'Tất Cả Sản Phẩm' : categories.find(c => c.id === selectedCategory)?.name}</h2>
+            <h2>Tất Cả Sản Phẩm</h2>
             <span className="count">{filteredProducts.length} sản phẩm</span>
           </div>
 
