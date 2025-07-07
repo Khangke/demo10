@@ -909,7 +909,7 @@ body {
   
   .product-description {
     font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
-    margin-bottom: 0.91rem; /* Giảm 30% từ 1.3rem */
+    margin-bottom: 0.91rem; /* Giảm 40% từ 0.91rem */
   }
 }
 
@@ -12175,7 +12175,7 @@ select.form-input-compact:disabled {
   }
   
   .promo-content h3 {
-    font-size: 0.55rem; /* Giảm 30% từ 1.3rem */
+    font-size: 0.55rem; /* Giảm 40% từ 0.91rem */
     margin-bottom: 0.42rem; /* Giảm 30% từ 1rem */
   }
   
@@ -12688,7 +12688,7 @@ select.form-input-compact:disabled {
   }
   
   .promo-content h3 {
-    font-size: 0.55rem; /* Giảm 30% từ 1.3rem */
+    font-size: 0.55rem; /* Giảm 40% từ 0.91rem */
     margin-bottom: 0.42rem; /* Giảm 30% từ 1rem */
   }
   
