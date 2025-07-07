@@ -96,17 +96,17 @@ const ProductsPage = () => {
 
   if (loading) {
     return (
-      <div className="products-page">
-        <div className="loading-container">
-          <div className="loading-spinner"></div>
-          <p>Đang tải sản phẩm...</p>
+      <div className="compact-products-page">
+        <div className="compact-loading">
+          <div className="compact-spinner"></div>
+          <p>Đang tải...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="products-page">
+    <div className="compact-products-page">
       <Helmet>
         <title>{seoData.title}</title>
         <meta name="description" content={seoData.description} />
@@ -119,103 +119,97 @@ const ProductsPage = () => {
         <link rel="canonical" href={seoData.url} />
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="products-hero">
+      {/* Compact Header */}
+      <div className="compact-header">
         <div className="container">
-          <div className="hero-content">
-            <h1 className="hero-title">
-              <span className="gradient-text">Bộ Sưu Tập</span>
-              <span className="hero-subtitle">Trầm Hương Cao Cấp</span>
-            </h1>
-            <p className="hero-description">
-              Khám phá những sản phẩm trầm hương tự nhiên, chất lượng cao được tuyển chọn kỹ lưỡng
-            </p>
-          </div>
+          <h1 className="compact-title">
+            <span className="title-gradient">Bộ Sưu Tập</span> Trầm Hương
+          </h1>
+          <p className="compact-subtitle">Sản phẩm tự nhiên cao cấp</p>
         </div>
-      </section>
+      </div>
 
       <div className="container">
-        {/* Filters Section */}
-        <section className="products-filters">
-          <div className="filters-top">
-            <div className="search-box">
+        {/* Ultra Compact Filters */}
+        <div className="compact-filters">
+          {/* Search and Sort */}
+          <div className="filter-row">
+            <div className="compact-search">
               <ion-icon name="search-outline"></ion-icon>
               <input
                 type="text"
-                placeholder="Tìm kiếm sản phẩm..."
+                placeholder="Tìm kiếm..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            <div className="sort-box">
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-              >
-                <option value="newest">Mới nhất</option>
-                <option value="price-low">Giá thấp đến cao</option>
-                <option value="price-high">Giá cao đến thấp</option>
-                <option value="name">Tên A-Z</option>
-              </select>
-            </div>
+            <select
+              className="compact-sort"
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+            >
+              <option value="newest">Mới nhất</option>
+              <option value="price-low">Giá thấp</option>
+              <option value="price-high">Giá cao</option>
+              <option value="name">Tên A-Z</option>
+            </select>
           </div>
 
-          <div className="category-filters">
+          {/* Category Pills */}
+          <div className="category-pills">
             {categories.map(category => (
               <button
                 key={category.id}
-                className={`category-btn ${selectedCategory === category.id ? 'active' : ''}`}
+                className={`pill ${selectedCategory === category.id ? 'active' : ''}`}
                 onClick={() => setSelectedCategory(category.id)}
               >
-                <span className="category-icon">{category.icon}</span>
-                <span className="category-name">{category.name}</span>
+                {category.icon} {category.name}
               </button>
             ))}
           </div>
-        </section>
+        </div>
 
-        {/* Products Grid */}
-        <section className="products-grid-section">
-          <div className="products-header">
-            <h2 className="section-title">
-              {selectedCategory === 'all' ? 'Tất Cả Sản Phẩm' : categories.find(c => c.id === selectedCategory)?.name}
-            </h2>
-            <div className="products-count">
-              <span>{filteredProducts.length} sản phẩm</span>
-            </div>
+        {/* Products Section */}
+        <div className="products-section">
+          <div className="section-info">
+            <h2>{selectedCategory === 'all' ? 'Tất Cả Sản Phẩm' : categories.find(c => c.id === selectedCategory)?.name}</h2>
+            <span className="count">{filteredProducts.length} sản phẩm</span>
           </div>
 
           {filteredProducts.length === 0 ? (
-            <div className="no-products">
+            <div className="no-results">
               <ion-icon name="search-outline"></ion-icon>
               <h3>Không tìm thấy sản phẩm</h3>
-              <p>Vui lòng thử lại với từ khóa khác hoặc chọn danh mục khác</p>
+              <p>Thử từ khóa khác</p>
             </div>
           ) : (
-            <div className="products-grid">
+            <div className="compact-grid">
               {filteredProducts.map(product => (
-                <div key={product.id} className="product-card">
-                  <div className="product-image">
+                <div key={product.id} className="compact-card">
+                  <div className="card-image">
                     <img src={product.image} alt={product.name} />
-                    <div className="product-overlay">
-                      <Link to={`/product/${product.id}`} className="view-btn">
+                    <div className="image-overlay">
+                      <Link to={`/product/${product.id}`} className="quick-view">
                         <ion-icon name="eye-outline"></ion-icon>
-                        <span>Xem Chi Tiết</span>
                       </Link>
                     </div>
                     {product.featured && (
-                      <div className="product-badge">
+                      <div className="featured-badge">
                         <ion-icon name="star"></ion-icon>
-                        <span>Nổi Bật</span>
                       </div>
                     )}
                   </div>
-                  <div className="product-info">
-                    <h3 className="product-name">{product.name}</h3>
-                    <p className="product-description">{product.description}</p>
-                    <div className="product-meta">
-                      <span className="product-category">{product.category}</span>
-                      <div className="product-rating">
+                  <div className="card-content">
+                    <h3 className="product-title">{product.name}</h3>
+                    <p className="product-desc">{product.description}</p>
+                    <div className="product-bottom">
+                      <div className="price-info">
+                        <span className="current-price">{formatPrice(product.price)}</span>
+                        {product.original_price && product.original_price > product.price && (
+                          <span className="old-price">{formatPrice(product.original_price)}</span>
+                        )}
+                      </div>
+                      <div className="rating">
                         {[...Array(5)].map((_, i) => (
                           <ion-icon
                             key={i}
@@ -223,21 +217,14 @@ const ProductsPage = () => {
                             className={i < product.rating ? "filled" : ""}
                           ></ion-icon>
                         ))}
-                        <span className="rating-text">({product.rating}/5)</span>
                       </div>
-                    </div>
-                    <div className="product-price">
-                      <span className="price">{formatPrice(product.price)}</span>
-                      {product.original_price && product.original_price > product.price && (
-                        <span className="original-price">{formatPrice(product.original_price)}</span>
-                      )}
                     </div>
                   </div>
                 </div>
               ))}
             </div>
           )}
-        </section>
+        </div>
       </div>
     </div>
   );
