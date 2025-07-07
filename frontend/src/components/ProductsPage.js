@@ -397,14 +397,6 @@ const ProductsPage = () => {
               <div key={review.id} className="review-card">
                 <div className="review-header">
                   <div className="reviewer-info">
-                    <img 
-                      src={review.avatar} 
-                      alt={review.name}
-                      className="reviewer-avatar"
-                      onError={(e) => {
-                        e.target.src = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces';
-                      }}
-                    />
                     <div className="reviewer-details">
                       <h4 className="reviewer-name">
                         {review.name}
