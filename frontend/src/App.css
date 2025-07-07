@@ -195,42 +195,69 @@ body {
 
 
 
+/* Desktop Navigation - Enhanced & Professional */
+.desktop-nav {
+  justify-self: center;
+  position: relative;
+}
+
 .desktop-nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: rgba(244, 208, 63, 0.02);
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  border: 1px solid rgba(244, 208, 63, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .desktop-nav a {
   color: #D1D1D1;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  padding: 0.5rem 0;
+  padding: 0.6rem 0.8rem;
   letter-spacing: 0.01em;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .desktop-nav a:hover {
   color: #F4D03F;
+  background: rgba(244, 208, 63, 0.08);
   transform: translateY(-1px);
+}
+
+.desktop-nav a.active {
+  color: #F4D03F;
+  background: rgba(244, 208, 63, 0.12);
+  font-weight: 600;
 }
 
 .desktop-nav a::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 2px;
+  left: 50%;
   width: 0;
   height: 2px;
   background: linear-gradient(90deg, #F4D03F, #F39C12);
-  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 1px;
+  transform: translateX(-50%);
 }
 
-.desktop-nav a:hover::after {
-  width: 100%;
+.desktop-nav a:hover::after,
+.desktop-nav a.active::after {
+  width: 60%;
 }
 
 .header-actions {
