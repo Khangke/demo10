@@ -7346,6 +7346,7 @@ select.form-input-compact:disabled {
   width: 36px;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 .search-input-wrapper.show {
