@@ -211,16 +211,6 @@ const ProductsPage = () => {
         <link rel="canonical" href={seoData.url} />
       </Helmet>
 
-      {/* Compact Header */}
-      <div className="compact-header">
-        <div className="container">
-          <h1 className="compact-title">
-            <span className="title-gradient">Trầm Hương</span> Khang
-          </h1>
-          <p className="compact-subtitle">Sản phẩm tự nhiên cao cấp</p>
-        </div>
-      </div>
-
       <div className="container">
         {/* Products Section */}
         <div className="products-section">
