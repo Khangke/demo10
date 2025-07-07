@@ -3316,6 +3316,15 @@ select.form-input-compact:disabled {
   margin-bottom: 4rem;
 }
 
+/* Mobile Optimization - Giảm 44% cho reviews grid */
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(auto-fit, minmax(179.2px, 1fr)); /* Giảm 44% từ 320px */
+    gap: 1.4rem; /* Giảm 44% từ 2.5rem */
+    margin-bottom: 2.24rem; /* Giảm 44% từ 4rem */
+  }
+}
+
 .review-card {
   background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
   padding: 2.5rem;
