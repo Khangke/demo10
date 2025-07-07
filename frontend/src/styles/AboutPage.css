@@ -1,0 +1,950 @@
+/* ================================= */
+/* ABOUT PAGE STYLES */
+/* ================================= */
+
+.about-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+  color: #E5E5E5;
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ================================= */
+/* HERO SECTION */
+/* ================================= */
+
+.about-hero {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(244, 208, 63, 0.1);
+  border: 1px solid rgba(244, 208, 63, 0.3);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: #F4D03F;
+  margin-bottom: 1.5rem;
+}
+
+.hero-badge ion-icon {
+  font-size: 1rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #B8B8B8;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #F4D03F;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.25rem;
+}
+
+/* ================================= */
+/* SECTION HEADERS */
+/* ================================= */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F4D03F;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #B8B8B8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ================================= */
+/* COMPANY STORY */
+/* ================================= */
+
+.company-story {
+  padding: 4rem 0;
+  background: rgba(30, 30, 30, 0.3);
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-block h3 {
+  color: #F4D03F;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.story-block p {
+  color: #E5E5E5;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.story-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
+  border: 1px solid rgba(244, 208, 63, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+}
+
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-placeholder ion-icon {
+  font-size: 3rem;
+  color: #F4D03F;
+}
+
+.image-placeholder h4 {
+  color: #F4D03F;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.image-placeholder p {
+  color: #B8B8B8;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ================================= */
+/* MILESTONES */
+/* ================================= */
+
+.milestones {
+  padding: 4rem 0;
+}
+
+.milestone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.milestone-card {
+  background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
+  border: 1px solid rgba(244, 208, 63, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.milestone-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(244, 208, 63, 0.3);
+  box-shadow: 0 10px 30px rgba(244, 208, 63, 0.1);
+}
+
+.milestone-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.milestone-icon ion-icon {
+  font-size: 1.5rem;
+  color: #1A1A1A;
+}
+
+.milestone-year {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #F4D03F;
+  margin-bottom: 0.5rem;
+}
+
+.milestone-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #E5E5E5;
+  margin-bottom: 0.5rem;
+}
+
+.milestone-description {
+  font-size: 0.9rem;
+  color: #B8B8B8;
+  line-height: 1.5;
+}
+
+/* ================================= */
+/* PRODUCT CATEGORIES */
+/* ================================= */
+
+.product-categories {
+  padding: 4rem 0;
+  background: rgba(30, 30, 30, 0.3);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
+  border: 1px solid rgba(244, 208, 63, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(244, 208, 63, 0.3);
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(244, 208, 63, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.category-icon ion-icon {
+  font-size: 1.3rem;
+  color: #F4D03F;
+}
+
+.category-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #F4D03F;
+  margin-bottom: 0.5rem;
+}
+
+.category-description {
+  font-size: 0.9rem;
+  color: #B8B8B8;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.category-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #E5E5E5;
+  margin-bottom: 0.5rem;
+}
+
+.category-features li ion-icon {
+  font-size: 0.8rem;
+  color: #4CAF50;
+}
+
+/* ================================= */
+/* TEAM SECTION */
+/* ================================= */
+
+.team-section {
+  padding: 4rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
+  border: 1px solid rgba(244, 208, 63, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(244, 208, 63, 0.3);
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.member-avatar ion-icon {
+  font-size: 2rem;
+  color: #1A1A1A;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #F4D03F;
+  margin-bottom: 0.5rem;
+}
+
+.member-position {
+  font-size: 0.9rem;
+  color: #E5E5E5;
+  margin-bottom: 0.25rem;
+}
+
+.member-experience {
+  font-size: 0.85rem;
+  color: #B8B8B8;
+  margin-bottom: 0.25rem;
+}
+
+.member-specialty {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* ================================= */
+/* COMPANY VALUES */
+/* ================================= */
+
+.company-values {
+  padding: 4rem 0;
+  background: rgba(30, 30, 30, 0.3);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
+  border: 1px solid rgba(244, 208, 63, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(244, 208, 63, 0.3);
+}
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(244, 208, 63, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.value-icon ion-icon {
+  font-size: 1.5rem;
+  color: #F4D03F;
+}
+
+.value-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #F4D03F;
+  margin-bottom: 0.5rem;
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  color: #B8B8B8;
+  line-height: 1.5;
+}
+
+/* ================================= */
+/* STATISTICS */
+/* ================================= */
+
+.statistics {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  color: #1A1A1A;
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(26, 26, 26, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.stat-icon ion-icon {
+  font-size: 1.5rem;
+  color: #1A1A1A;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ================================= */
+/* MISSION STATEMENT */
+/* ================================= */
+
+.mission-statement {
+  padding: 4rem 0;
+  background: rgba(30, 30, 30, 0.3);
+}
+
+.mission-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+}
+
+.mission-icon ion-icon {
+  font-size: 2rem;
+  color: #1A1A1A;
+}
+
+.mission-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F4D03F;
+  margin-bottom: 1.5rem;
+}
+
+.mission-text {
+  font-size: 1.1rem;
+  color: #E5E5E5;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.mission-quote {
+  font-size: 1.2rem;
+  color: #F4D03F;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ================================= */
+/* CONTACT CTA */
+/* ================================= */
+
+.contact-cta {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1E1E1E 0%, #141414 100%);
+  border-top: 1px solid rgba(244, 208, 63, 0.2);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F4D03F;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1rem;
+  color: #B8B8B8;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-primary, .cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
+  color: #1A1A1A;
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(244, 208, 63, 0.3);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #F4D03F;
+  border: 2px solid #F4D03F;
+}
+
+.cta-secondary:hover {
+  background: #F4D03F;
+  color: #1A1A1A;
+}
+
+/* ================================= */
+/* MOBILE RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 768px) {
+  .about-page {
+    padding-top: 70px;
+  }
+
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  /* Hero Section */
+  .about-hero {
+    padding: 2rem 0;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+
+  /* Section Headers */
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  /* Story Content */
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .story-block h3 {
+    font-size: 1.1rem;
+  }
+
+  .story-block p {
+    font-size: 0.9rem;
+  }
+
+  /* Milestone Cards */
+  .milestone-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .milestone-card {
+    padding: 1.5rem;
+  }
+
+  .milestone-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .milestone-year {
+    font-size: 1.2rem;
+  }
+
+  /* Categories */
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .category-card {
+    padding: 1.5rem;
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-card {
+    padding: 1.5rem;
+  }
+
+  .member-avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Values */
+  .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+  }
+
+  .value-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Statistics */
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+
+  /* Mission */
+  .mission-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mission-title {
+    font-size: 1.5rem;
+  }
+
+  .mission-text {
+    font-size: 1rem;
+  }
+
+  /* CTA */
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-primary, .cta-secondary {
+    min-width: 200px;
+    justify-content: center;
+  }
+
+  /* Sections Padding */
+  .company-story,
+  .milestones,
+  .product-categories,
+  .team-section,
+  .company-values,
+  .statistics,
+  .mission-statement,
+  .contact-cta {
+    padding: 2.5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .stat-item {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .milestone-card,
+  .category-card,
+  .team-card,
+  .value-card {
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-primary, .cta-secondary {
+    min-width: 160px;
+    padding: 0.65rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  /* Further reduce sections padding */
+  .company-story,
+  .milestones,
+  .product-categories,
+  .team-section,
+  .company-values,
+  .statistics,
+  .mission-statement,
+  .contact-cta {
+    padding: 2rem 0;
+  }
+}
+
+/* ================================= */
+/* ANIMATIONS */
+/* ================================= */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations */
+.milestone-card,
+.category-card,
+.team-card,
+.value-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.story-text {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.story-image {
+  animation: slideInRight 0.8s ease forwards;
+}
+
+/* ================================= */
+/* ACCESSIBILITY */
+/* ================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .milestone-card,
+  .category-card,
+  .team-card,
+  .value-card {
+    border: 2px solid #F4D03F;
+  }
+  
+  .hero-badge {
+    border: 2px solid #F4D03F;
+  }
+}
