@@ -7304,22 +7304,7 @@ select.form-input-compact:disabled {
   color: inherit;
 }
 
-.search-input-wrapper {
-  width: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  margin-left: 0;
-}
 
-.search-input-wrapper.show {
-  width: 280px;
-  opacity: 1;
-  visibility: visible;
-  margin-left: 0.5rem;
-}
 
 
 
