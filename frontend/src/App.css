@@ -13672,7 +13672,7 @@ select.form-input-compact:disabled {
   
   /* Footer bottom padding for very small screens */
   .footer-bottom {
-    padding-bottom: 75px;
+    padding-bottom: 85px !important;
   }
 }
 
