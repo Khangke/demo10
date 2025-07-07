@@ -799,7 +799,7 @@ body {
     right: 0.7rem; /* Giảm 30% từ 1rem */
     padding: 0.28rem 0.63rem; /* Giảm 30% từ 0.4rem 0.9rem */
     border-radius: 14px; /* Giảm 30% từ 20px */
-    font-size: 0.525rem; /* Giảm 30% từ 0.75rem */
+    font-size: 0.32rem; /* Giảm 30% từ 0.75rem */
     box-shadow: 0 2.8px 8.4px rgba(244, 208, 63, 0.3); /* Giảm 30% */
   }
 }
@@ -12220,7 +12220,7 @@ select.form-input-compact:disabled {
     top: 13px; /* Giảm 30% từ 30px */
     right: 8px; /* Giảm 30% từ 20px */
     padding: 0.21rem 0.42rem; /* Giảm 30% từ 0.5rem 1rem */
-    font-size: 0.525rem; /* Giảm 30% từ 0.75rem */
+    font-size: 0.32rem; /* Giảm 30% từ 0.75rem */
   }
   
   .footer-main {
@@ -12733,7 +12733,7 @@ select.form-input-compact:disabled {
     top: 13px; /* Giảm 30% từ 30px */
     right: 8px; /* Giảm 30% từ 20px */
     padding: 0.21rem 0.42rem; /* Giảm 30% từ 0.5rem 1rem */
-    font-size: 0.525rem; /* Giảm 30% từ 0.75rem */
+    font-size: 0.32rem; /* Giảm 30% từ 0.75rem */
   }
   
   .footer-main {
