@@ -3302,6 +3302,13 @@ select.form-input-compact:disabled {
   padding: 7rem 0;
 }
 
+/* Mobile Optimization - Giảm 44% cho Reviews section */
+@media (max-width: 768px) {
+  .reviews {
+    padding: 3.92rem 0; /* Giảm 44% từ 7rem */
+  }
+}
+
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
