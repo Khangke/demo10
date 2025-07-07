@@ -8072,25 +8072,6 @@ select.form-input-compact:disabled {
   opacity: 1;
 }
 
-/* Scrollbar for category pills */
-.category-pills::-webkit-scrollbar {
-  height: 3px;
-}
-
-.category-pills::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-}
-
-.category-pills::-webkit-scrollbar-thumb {
-  background: rgba(244, 208, 63, 0.5);
-  border-radius: 2px;
-}
-
-.category-pills::-webkit-scrollbar-thumb:hover {
-  background: rgba(244, 208, 63, 0.7);
-}
-
 /* Product Modal */
 .product-modal-overlay {
   position: fixed;
