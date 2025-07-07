@@ -70,11 +70,11 @@ const Header = () => {
                 <ion-icon name="person-outline" class="icon"></ion-icon>
               </button>
             </div>
-            <button className="header-cta-btn">Liên Hệ Ngay</button>
+            <button className="header-cta-btn">Liên Hệ</button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
+          <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label="Menu">
             <span></span>
             <span></span>
             <span></span>
@@ -90,7 +90,7 @@ const Header = () => {
               <li><a href="#about" onClick={toggleMobileMenu}>Giới Thiệu</a></li>
               <li><a href="#news" onClick={toggleMobileMenu}>Tin Tức</a></li>
               <li><a href="#contact" onClick={toggleMobileMenu}>Liên Hệ</a></li>
-              <li><a href="#cart" onClick={toggleMobileMenu}>Giỏ Hàng</a></li>
+              <li><Link to="/cart" onClick={toggleMobileMenu}>Giỏ Hàng ({cartCount})</Link></li>
               <li><a href="#account" onClick={toggleMobileMenu}>Tài Khoản</a></li>
             </ul>
           </nav>
