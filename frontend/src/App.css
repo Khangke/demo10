@@ -7321,25 +7321,7 @@ select.form-input-compact:disabled {
   margin-left: 0.5rem;
 }
 
-.search-input-wrapper {
-  width: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  transform: translateX(-10px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  left: 52px;
-  top: 0;
-  z-index: 10;
-}
 
-.search-input-wrapper.show {
-  width: 280px;
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-}
 
 .search-toggle {
   background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
