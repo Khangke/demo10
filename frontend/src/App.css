@@ -7353,6 +7353,7 @@ select.form-input-compact:disabled {
   width: 240px;
   border-color: #F4D03F;
   box-shadow: 0 0 0 2px rgba(244, 208, 63, 0.1);
+  z-index: 15;
 }
 
 .search-input {
