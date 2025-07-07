@@ -7723,7 +7723,6 @@ select.form-input-compact:disabled {
     min-width: auto;
   }
 }
-}
 
 @media (max-width: 480px) {
   .compact-header {
