@@ -26,11 +26,11 @@ const ProductsPage = () => {
 
   // Categories
   const categories = [
-    { id: 'all', name: 'Tất Cả', icon: '🌟' },
-    { id: 'ky-nam', name: 'Kỳ Nam', icon: '👑' },
-    { id: 'tu-nhien', name: 'Tự Nhiên', icon: '🌿' },
-    { id: 'truyen-thong', name: 'Truyền Thống', icon: '🔥' },
-    { id: 'sang', name: 'Sáng', icon: '✨' }
+    { id: 'all', name: 'Tất Cả', icon: '🌟', hot: false },
+    { id: 'ky-nam', name: 'Kỳ Nam', icon: '👑', hot: true },
+    { id: 'tu-nhien', name: 'Tự Nhiên', icon: '🌿', hot: false },
+    { id: 'truyen-thong', name: 'Truyền Thống', icon: '🔥', hot: false },
+    { id: 'sang', name: 'Sáng', icon: '✨', hot: true }
   ];
 
   // Customer Reviews Data
