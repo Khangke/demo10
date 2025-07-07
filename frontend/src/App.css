@@ -7593,9 +7593,9 @@ select.form-input-compact:disabled {
 
 .product-desc {
   color: #B8B8B8;
-  font-size: 0.7rem;
+  font-size: 0.84rem;
   line-height: 1.3;
-  margin: 0 0 0.6rem 0;
+  margin: 0 0 0.72rem 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
