@@ -7335,7 +7335,7 @@ select.form-input-compact:disabled {
 
 .search-input-wrapper {
   position: absolute;
-  right: 0;
+  right: 40px;
   top: 0;
   height: 36px;
   overflow: hidden;
@@ -7343,10 +7343,11 @@ select.form-input-compact:disabled {
   background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
   border: 1px solid rgba(244, 208, 63, 0.2);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 36px;
+  width: 0;
   display: flex;
   align-items: center;
   z-index: 10;
+  opacity: 0;
 }
 
 .search-input-wrapper.show {
