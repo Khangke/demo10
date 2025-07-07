@@ -7894,39 +7894,39 @@ select.form-input-compact:disabled {
   }
   
   .card-image {
-    height: 120px;
+    height: 144px;
   }
   
   .card-content {
-    padding: 0.6rem;
+    padding: 0.72rem;
   }
   
   .product-title {
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
+    font-size: 0.96rem;
+    margin-bottom: 0.24rem;
     /* Prevent text overflow */
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
   
   .product-desc {
-    font-size: 0.65rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.78rem;
+    margin-bottom: 0.6rem;
     -webkit-line-clamp: 1;
   }
   
   .product-bottom {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.3rem;
+    gap: 0.36rem;
   }
   
   .current-price {
-    font-size: 0.85rem;
+    font-size: 1.02rem;
   }
   
   .old-price {
-    font-size: 0.65rem;
+    font-size: 0.78rem;
   }
   
   .rating ion-icon {
