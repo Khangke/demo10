@@ -12181,11 +12181,11 @@ select.form-input-compact:disabled {
   
   .promo-content p {
     font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
-    margin-bottom: 0.63rem; /* Giảm 30% từ 1.5rem */
+    margin-bottom: 0.63rem; /* Giảm 40% từ 1.05rem */
   }
   
   .promo-timer {
-    margin-bottom: 0.63rem; /* Giảm 30% từ 1.5rem */
+    margin-bottom: 0.63rem; /* Giảm 40% từ 1.05rem */
   }
   
   .timer {
@@ -12206,7 +12206,7 @@ select.form-input-compact:disabled {
   .promo-buttons {
     justify-content: center;
     gap: 0.42rem; /* Giảm 40% từ 0.7rem */
-    margin-top: 0.63rem; /* Giảm 30% từ 1.5rem */
+    margin-top: 0.63rem; /* Giảm 40% từ 1.05rem */
   }
   
   .promo-btn {
@@ -12694,11 +12694,11 @@ select.form-input-compact:disabled {
   
   .promo-content p {
     font-size: 0.38rem; /* Giảm 40% từ 0.63rem */
-    margin-bottom: 0.63rem; /* Giảm 30% từ 1.5rem */
+    margin-bottom: 0.63rem; /* Giảm 40% từ 1.05rem */
   }
   
   .promo-timer {
-    margin-bottom: 0.63rem; /* Giảm 30% từ 1.5rem */
+    margin-bottom: 0.63rem; /* Giảm 40% từ 1.05rem */
   }
   
   .timer {
@@ -12719,7 +12719,7 @@ select.form-input-compact:disabled {
   .promo-buttons {
     justify-content: center;
     gap: 0.42rem; /* Giảm 40% từ 0.7rem */
-    margin-top: 0.63rem; /* Giảm 30% từ 1.5rem */
+    margin-top: 0.63rem; /* Giảm 40% từ 1.05rem */
   }
   
   .promo-btn {
