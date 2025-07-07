@@ -74,7 +74,7 @@ const HomePage = () => {
         </div>
         <div className="hero-content">
           <h1>Trầm Hương Cao Cấp Khang</h1>
-          <p>Khám phá vẻ đẹp tinh túy của trầm hương Việt Nam với chất lượng vượt trội và hương thơm đặc trưng từ rừng tự nhiên</p>
+          <p>Khám phá tinh túy trầm hương Việt Nam với chất lượng vượt trội và hương thơm đặc trưng từ rừng tự nhiên</p>
           <div className="hero-cta">
             <Link to="/products" className="cta-primary">Khám Phá Ngay</Link>
             <button className="cta-secondary">Tư Vấn Miễn Phí</button>
