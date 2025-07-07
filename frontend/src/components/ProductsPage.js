@@ -15,21 +15,12 @@ const ProductsPage = () => {
 
   // SEO Data
   const seoData = {
-    title: "Trầm Hương Cao Cấp - Bộ Sưu Tập Đầy Đủ | Khang Trầm Hương",
-    description: "Khám phá bộ sưu tập trầm hương cao cấp 100% tự nhiên. Kỳ Nam, Sáng, Truyền Thống với giá tốt nhất. Giao hàng toàn quốc, chất lượng đảm bảo.",
+    title: "Trầm Hương Cao Cấp - Sản Phẩm Chất Lượng | Khang Trầm Hương",
+    description: "Khám phá các sản phẩm trầm hương cao cấp 100% tự nhiên. Chất lượng vượt trội với giá tốt nhất. Giao hàng toàn quốc, chất lượng đảm bảo.",
     url: "https://khangtramhuong.vn/san-pham",
     image: "https://images.pexels.com/photos/3639806/pexels-photo-3639806.jpeg",
     keywords: "trầm hương, kỳ nam, trầm hương cao cấp, trầm hương tự nhiên, mua trầm hương, trầm hương việt nam"
   };
-
-  // Categories
-  const categories = [
-    { id: 'all', name: 'Tất Cả', icon: '🌟', hot: false },
-    { id: 'ky-nam', name: 'Kỳ Nam', icon: '👑', hot: true },
-    { id: 'tu-nhien', name: 'Tự Nhiên', icon: '🌿', hot: false },
-    { id: 'truyen-thong', name: 'Truyền Thống', icon: '🔥', hot: false },
-    { id: 'sang', name: 'Sáng', icon: '✨', hot: true }
-  ];
 
   // Customer Reviews Data
   const customerReviews = [
