@@ -137,6 +137,32 @@ const ProductsPage = () => {
 
     let filtered = [...products];
 
+    // Filter by category
+    if (selectedCategory !== 'all') {
+      filtered = filtered.filter(product => {
+        if (!product) return false;
+        const category = product.category || '';
+        const name = product.name || '';
+        const searchTerm = selectedCategory.replace('-', ' ').toLowerCase();
+        
+        return category.toLowerCase().includes(searchTerm) ||
+               name.toLowerCase().includes(searchTerm);
+      });
+    }
+
+    // Filter by search
+    if (searchQuery && searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim();
+      filtered = filtered.filter(product => {
+        if (!product) return false;
+        const name = product.name || '';
+        const description = product.description || '';
+        
+        return name.toLowerCase().includes(query) ||
+               description.toLowerCase().includes(query);
+      });
+    }
+
     // Sort products
     switch (sortBy) {
       case 'price-low':
@@ -154,7 +180,7 @@ const ProductsPage = () => {
     }
 
     setFilteredProducts(filtered);
-  }, [products, sortBy]);
+  }, [products, selectedCategory, sortBy, searchQuery]);
 
   // Format price safely
   const formatPrice = (price) => {
