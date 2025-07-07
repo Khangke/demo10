@@ -3203,6 +3203,20 @@ select.form-input-compact:disabled {
   opacity: 1;
 }
 
+/* Mobile Optimization - Giảm 30% cho feature items */
+@media (max-width: 768px) {
+  .feature-item {
+    gap: 1.4rem; /* Giảm 30% từ 2rem */
+    padding: 1.75rem; /* Giảm 30% từ 2.5rem */
+    border-radius: 16.8px; /* Giảm 30% từ 24px */
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-5.6px); /* Giảm 30% từ -8px */
+    box-shadow: 0 11.2px 33.6px rgba(244, 208, 63, 0.08); /* Giảm 30% */
+  }
+}
+
 .feature-icon {
   font-size: 2.2rem;
   width: 72px;
