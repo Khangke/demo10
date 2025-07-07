@@ -3283,16 +3283,16 @@ select.form-input-compact:disabled {
   font-weight: 400;
 }
 
-/* Mobile Optimization - Giảm 30% cho feature content text */
+/* Mobile Optimization - Giảm tiếp 20% cho feature content text */
 @media (max-width: 768px) {
   .feature-content h3 {
-    font-size: 0.875rem; /* Giảm 30% từ 1.25rem */
-    margin-bottom: 0.7rem; /* Giảm 30% từ 1rem */
+    font-size: 0.7rem; /* Giảm 20% từ 0.875rem (ban đầu 1.25rem) */
+    margin-bottom: 0.56rem; /* Giảm 20% từ 0.7rem (ban đầu 1rem) */
   }
   
   .feature-content p {
-    font-size: 0.665rem; /* Giảm 30% từ 0.95rem */
-    line-height: 1.5; /* Điều chỉnh line-height cho mobile */
+    font-size: 0.532rem; /* Giảm 20% từ 0.665rem (ban đầu 0.95rem) */
+    line-height: 1.4; /* Điều chỉnh line-height cho mobile compact hơn */
   }
 }
 
