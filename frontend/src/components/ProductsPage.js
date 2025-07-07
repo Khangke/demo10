@@ -12,6 +12,9 @@ const ProductsPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [sortBy, setSortBy] = useState('newest');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [searchExpanded, setSearchExpanded] = useState(false);
 
   // SEO Data
   const seoData = {
