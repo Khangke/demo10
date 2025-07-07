@@ -377,6 +377,91 @@ const ProductsPage = () => {
             </div>
           )}
         </div>
+
+        {/* Customer Reviews Section */}
+        <div className="reviews-section">
+          <div className="reviews-header">
+            <h2 className="reviews-title">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+              Đánh Giá Khách Hàng
+            </h2>
+            <div className="reviews-stats">
+              <div className="average-rating">
+                <span className="rating-number">4.8</span>
+                <div className="stars">
+                  {[...Array(5)].map((_, i) => (
+                    <ion-icon key={i} name="star" className="filled"></ion-icon>
+                  ))}
+                </div>
+                <span className="reviews-count">({customerReviews.length} đánh giá)</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="reviews-grid">
+            {customerReviews.map(review => (
+              <div key={review.id} className="review-card">
+                <div className="review-header">
+                  <div className="reviewer-info">
+                    <img 
+                      src={review.avatar} 
+                      alt={review.name}
+                      className="reviewer-avatar"
+                      onError={(e) => {
+                        e.target.src = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces';
+                      }}
+                    />
+                    <div className="reviewer-details">
+                      <h4 className="reviewer-name">
+                        {review.name}
+                        {review.verified && (
+                          <span className="verified-badge">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                          </span>
+                        )}
+                      </h4>
+                      <div className="review-meta">
+                        <div className="review-rating">
+                          {[...Array(5)].map((_, i) => (
+                            <ion-icon
+                              key={i}
+                              name={i < review.rating ? "star" : "star-outline"}
+                              className={i < review.rating ? "filled" : ""}
+                            ></ion-icon>
+                          ))}
+                        </div>
+                        <span className="review-date">{review.date}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="review-product">
+                    <span className="product-tag">{review.product}</span>
+                  </div>
+                </div>
+                <div className="review-content">
+                  <p className="review-comment">{review.comment}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="reviews-footer">
+            <button className="load-more-reviews">
+              <ion-icon name="refresh-outline"></ion-icon>
+              Xem thêm đánh giá
+            </button>
+            <div className="trust-indicators">
+              <div className="trust-item">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <span>100% đánh giá thật</span>
+              </div>
+              <div className="trust-item">
+                <ion-icon name="people-outline"></ion-icon>
+                <span>1,200+ khách hàng tin tưởng</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
