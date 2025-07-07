@@ -264,11 +264,12 @@ const ProductsPage = () => {
                   <div key={`${product.id}-${index}`} className="compact-card">
                     <div className="card-image">
                       <img 
-                        src={product.image || '/default-product.jpg'} 
+                        src={product.image_url || product.image || 'https://images.pexels.com/photos/3639806/pexels-photo-3639806.jpeg'} 
                         alt={product.name || 'Sản phẩm'} 
                         onError={(e) => {
                           e.target.src = 'https://images.pexels.com/photos/3639806/pexels-photo-3639806.jpeg';
                         }}
+                        loading="lazy"
                       />
                       <div className="image-overlay">
                         <Link 
