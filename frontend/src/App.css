@@ -7184,10 +7184,10 @@ select.form-input-compact:disabled {
   z-index: 1;
 }
 
-.compact-subtitle {
-  font-size: 0.8rem;
-  color: #B8B8B8;
-  margin: 0;
+.compact-sort option {
+  background-color: #2A2A2A;
+  color: #E8E8E8;
+  padding: 0.5rem;
   font-weight: 500;
 }
 
