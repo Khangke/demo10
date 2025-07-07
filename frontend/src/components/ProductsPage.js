@@ -293,6 +293,7 @@ const ProductsPage = () => {
                 className={`pill ${selectedCategory === category.id ? 'active' : ''}`}
                 onClick={() => setSelectedCategory(category.id)}
                 type="button"
+                data-hot={category.hot ? "true" : "false"}
               >
                 <span role="img" aria-label={category.name}>{category.icon}</span> {category.name}
               </button>
