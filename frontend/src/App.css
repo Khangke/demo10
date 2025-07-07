@@ -7193,7 +7193,7 @@ select.form-input-compact:disabled {
 
 /* Enhanced Filters Section */
 .compact-filters {
-  padding: 2rem 0 1.5rem 0;
+  padding: 1.4rem 0 1.05rem 0;
   border-bottom: 1px solid rgba(244, 208, 63, 0.08);
   position: relative;
   z-index: 1;
@@ -7201,8 +7201,8 @@ select.form-input-compact:disabled {
 
 .filter-row {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  gap: 1.05rem;
+  margin-bottom: 1.05rem;
   align-items: center;
   justify-content: space-between;
 }
