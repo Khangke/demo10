@@ -5,6 +5,26 @@
   box-sizing: border-box;
 }
 
+/* Prevent zoom and ensure only scrolling */
+html, body {
+  touch-action: pan-y pan-x;
+  -ms-touch-action: pan-y pan-x;
+  -webkit-touch-action: pan-y pan-x;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  overflow-x: hidden;
+}
+
+/* Allow text selection for better UX */
+p, span, h1, h2, h3, h4, h5, h6, div[contentEditable], input, textarea {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
 /* Smooth scrolling behavior */
 html {
   scroll-behavior: smooth;
