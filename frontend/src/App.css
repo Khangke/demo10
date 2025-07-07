@@ -7952,15 +7952,15 @@ select.form-input-compact:disabled {
 
 @media (max-width: 480px) {
   .compact-header {
-    padding: 0.42rem 0;
+    padding: 0.475rem 0;
   }
   
   .compact-title {
-    font-size: 0.84rem;
+    font-size: 0.949rem;
   }
   
   .compact-subtitle {
-    font-size: 0.49rem;
+    font-size: 0.554rem;
   }
   
   .compact-filters {
