@@ -260,23 +260,15 @@ const ProductsPage = () => {
           </div>
 
           <div className="action-right">
-            {/* Search Toggle */}
-            <div className={`search-container ${searchExpanded ? 'expanded' : ''}`}>
-              <button
-                className="search-toggle"
-                onClick={() => setSearchExpanded(!searchExpanded)}
-                aria-label="Tìm kiếm"
-              >
-                <ion-icon name="search-outline"></ion-icon>
-              </button>
-              <div className={`search-input-wrapper ${searchExpanded ? 'show' : ''}`}>
+            {/* Search Input - Always Visible */}
+            <div className="search-container expanded">
+              <div className="search-input-wrapper show">
                 <input
                   type="text"
                   placeholder="Tìm kiếm sản phẩm..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="search-input"
-                  autoFocus={searchExpanded}
                 />
                 {searchQuery && (
                   <button
