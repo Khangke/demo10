@@ -7787,7 +7787,8 @@ select.form-input-compact:disabled {
   .category-pills .pill span[role="img"] {
     font-size: 0.63rem;
   }
-}
+  
+  .category-pills {
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
