@@ -7409,7 +7409,9 @@ select.form-input-compact:disabled {
   background-repeat: no-repeat;
   background-position: right 0.6rem center;
   background-size: 0.9rem;
-  min-width: 100px;
+  min-width: auto;
+  width: fit-content;
+  max-width: 120px;
 }
 
 .sort-select:hover {
