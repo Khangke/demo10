@@ -766,6 +766,16 @@ body {
   justify-content: center;
 }
 
+/* Mobile Optimization - Giảm 30% cho quick-view-btn */
+@media (max-width: 768px) {
+  .quick-view-btn {
+    padding: 0.525rem 1.26rem; /* Giảm 30% từ 0.75rem 1.8rem */
+    border-radius: 17.5px; /* Giảm 30% từ 25px */
+    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    box-shadow: 0 2.8px 11.2px rgba(244, 208, 63, 0.3); /* Giảm 30% */
+  }
+}
+
 .quick-view-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 24px rgba(244, 208, 63, 0.4);
