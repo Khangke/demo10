@@ -885,6 +885,40 @@ body {
   font-weight: 400;
 }
 
+/* Mobile Optimization - Giảm 30% cho pricing và rating */
+@media (max-width: 768px) {
+  .product-price {
+    margin-bottom: 0.7rem; /* Giảm 30% từ 1rem */
+    gap: 0.49rem; /* Giảm 30% từ 0.7rem */
+  }
+  
+  .current-price {
+    font-size: 0.875rem; /* Giảm 30% từ 1.25rem */
+  }
+  
+  .original-price {
+    font-size: 0.7rem; /* Giảm 30% từ 1rem */
+  }
+  
+  .product-rating {
+    gap: 0.49rem; /* Giảm 30% từ 0.7rem */
+    margin-bottom: 1.26rem; /* Giảm 30% từ 1.8rem */
+  }
+  
+  .stars {
+    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    margin-bottom: 0.14rem; /* Giảm 30% từ 0.2rem */
+  }
+  
+  .product-rating .stars ion-icon {
+    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+  }
+  
+  .rating-text {
+    font-size: 0.56rem; /* Giảm 30% từ 0.8rem */
+  }
+}
+
 .add-to-cart-btn {
   background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
   color: #1A1A1A;
