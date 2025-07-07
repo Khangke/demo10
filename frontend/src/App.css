@@ -7364,7 +7364,7 @@ select.form-input-compact:disabled {
   outline: none;
   color: #E8E8E8;
   font-size: 0.85rem;
-  padding: 0.6rem 2.8rem 0.6rem 2.5rem;
+  padding: 0.6rem 2.8rem 0.6rem 1rem;
   width: 100%;
   opacity: 0;
   transition: opacity 0.3s ease 0.1s;
