@@ -168,12 +168,12 @@ body {
 .logo h1::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   left: 0;
-  width: 60%;
+  width: 50%;
   height: 1px;
   background: linear-gradient(90deg, #F4D03F, transparent);
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* Logo animations removed for subtle elegance */
