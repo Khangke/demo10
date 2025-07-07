@@ -3383,6 +3383,17 @@ select.form-input-compact:disabled {
   gap: 1.2rem;
 }
 
+/* Mobile Optimization - Giảm 44% cho review header */
+@media (max-width: 768px) {
+  .review-header {
+    margin-bottom: 0.84rem; /* Giảm 44% từ 1.5rem */
+  }
+  
+  .reviewer-info {
+    gap: 0.672rem; /* Giảm 44% từ 1.2rem */
+  }
+}
+
 .reviewer-avatar {
   width: 52px;
   height: 52px;
