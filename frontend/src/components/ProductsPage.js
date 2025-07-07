@@ -14,6 +14,7 @@ const ProductsPage = () => {
   const [sortBy, setSortBy] = useState('newest');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [searchExpanded, setSearchExpanded] = useState(false);
 
   // Categories
   const categories = [
