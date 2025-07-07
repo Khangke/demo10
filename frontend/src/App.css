@@ -3752,15 +3752,42 @@ select.form-input-compact:disabled {
   font-weight: 400;
 }
 
-/* Mobile Optimization - Giảm 44% cho reviewer details */
+/* Mobile Optimization - FIXED Readable Reviews */
 @media (max-width: 768px) {
+  .reviewer-info {
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .reviewer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
   .reviewer-details h4 {
-    font-size: 0.588rem; /* Giảm 44% từ 1.05rem */
-    margin-bottom: 0.168rem; /* Giảm 44% từ 0.3rem */
+    font-size: 1rem !important;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+    color: #F4D03F;
+    font-weight: 600;
   }
   
   .reviewer-location {
-    font-size: 0.476rem; /* Giảm 44% từ 0.85rem */
+    font-size: 0.8rem !important;
+    color: #999;
+    line-height: 1.2;
+  }
+  
+  .reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .reviewer-avatar ion-icon {
+    font-size: 1rem;
   }
 }
 
