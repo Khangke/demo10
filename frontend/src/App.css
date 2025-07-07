@@ -7792,9 +7792,7 @@ select.form-input-compact:disabled {
   }
 
   .search-input-wrapper.show {
-    width: calc(100% - 36px);
-    position: relative;
-    margin-left: 0.5rem;
+    width: 100%;
   }
 
   .search-toggle {
