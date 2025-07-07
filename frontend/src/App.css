@@ -847,7 +847,7 @@ body {
   .quick-view-btn {
     padding: 0.525rem 1.26rem; /* Giảm 30% từ 0.75rem 1.8rem */
     border-radius: 17.5px; /* Giảm 30% từ 25px */
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     box-shadow: 0 2.8px 11.2px rgba(244, 208, 63, 0.3); /* Giảm 30% */
   }
 }
@@ -908,7 +908,7 @@ body {
   }
   
   .product-description {
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     margin-bottom: 0.91rem; /* Giảm 30% từ 1.3rem */
   }
 }
@@ -982,12 +982,12 @@ body {
   }
   
   .stars {
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     margin-bottom: 0.14rem; /* Giảm 30% từ 0.2rem */
   }
   
   .product-rating .stars ion-icon {
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
   }
   
   .rating-text {
@@ -1017,7 +1017,7 @@ body {
   .add-to-cart-btn {
     padding: 0.63rem 1.26rem; /* Giảm 30% từ 0.9rem 1.8rem */
     border-radius: 17.5px; /* Giảm 30% từ 25px */
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     box-shadow: 0 1.4px 5.6px rgba(244, 208, 63, 0.15); /* Giảm 30% */
   }
 }
@@ -12180,7 +12180,7 @@ select.form-input-compact:disabled {
   }
   
   .promo-content p {
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     margin-bottom: 1.05rem; /* Giảm 30% từ 1.5rem */
   }
   
@@ -12211,7 +12211,7 @@ select.form-input-compact:disabled {
   
   .promo-btn {
     padding: 0.77rem 1.05rem; /* Giảm 30% từ 1.1rem 1.5rem */
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     min-height: 36.4px; /* Giảm 30% từ 52px */
     min-width: 112px; /* Giảm 30% từ 160px */
   }
@@ -12693,7 +12693,7 @@ select.form-input-compact:disabled {
   }
   
   .promo-content p {
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     margin-bottom: 1.05rem; /* Giảm 30% từ 1.5rem */
   }
   
@@ -12724,7 +12724,7 @@ select.form-input-compact:disabled {
   
   .promo-btn {
     padding: 0.77rem 1.05rem; /* Giảm 30% từ 1.1rem 1.5rem */
-    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    font-size: 0.38rem; /* Giảm 30% từ 0.9rem */
     min-height: 36.4px; /* Giảm 30% từ 52px */
     min-width: 112px; /* Giảm 30% từ 160px */
   }
