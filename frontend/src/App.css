@@ -7333,10 +7333,6 @@ select.form-input-compact:disabled {
   padding: 0.5rem;
   font-weight: 500;
 }
-  cursor: pointer;
-  outline: none;
-  transition: all 0.2s ease;
-}
 
 .compact-sort:focus {
   border-color: #F4D03F;
