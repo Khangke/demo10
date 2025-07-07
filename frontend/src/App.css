@@ -7274,29 +7274,50 @@ select.form-input-compact:disabled {
   color: #F4D03F;
 }
 
-/* No Results */
-.no-results {
+/* No Results & Error States */
+.no-results,
+.error-state {
   text-align: center;
   padding: 2rem 1rem;
   color: #B8B8B8;
 }
 
-.no-results ion-icon {
+.no-results ion-icon,
+.error-state ion-icon {
   font-size: 2rem;
   color: #666;
   margin-bottom: 0.6rem;
 }
 
-.no-results h3 {
+.no-results h3,
+.error-state h3 {
   font-size: 1.2rem;
   font-weight: 700;
   color: #E8E8E8;
   margin: 0 0 0.3rem 0;
 }
 
-.no-results p {
+.no-results p,
+.error-state p {
   font-size: 0.8rem;
-  margin: 0;
+  margin: 0 0 1rem 0;
+}
+
+.retry-btn {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #F4D03F 0%, #F39C12 100%);
+  color: #1A1A1A;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.retry-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(244, 208, 63, 0.3);
 }
 
 /* Loading */
