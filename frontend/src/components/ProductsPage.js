@@ -171,7 +171,7 @@ const ProductsPage = () => {
   // Render error state
   if (error) {
     return (
-      <div className="compact-products-page">
+      <div className="compact-products-page" style={{ marginTop: '80px' }}>
         <div className="container">
           <div className="error-state">
             <ion-icon name="alert-circle-outline"></ion-icon>
