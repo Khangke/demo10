@@ -7068,7 +7068,7 @@ select.form-input-compact:disabled {
   background: 
     linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%),
     radial-gradient(ellipse at center, rgba(244, 208, 63, 0.02) 0%, transparent 70%);
-  margin-top: 80px;
+  margin-top: 90px;
   padding: 0;
   position: relative;
 }
