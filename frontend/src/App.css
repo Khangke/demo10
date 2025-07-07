@@ -7177,7 +7177,7 @@ select.form-input-compact:disabled {
 }
 
 .compact-subtitle {
-  font-size: 0.7rem;
+  font-size: 0.791rem;
   color: #C0C0C0;
   margin: 0;
   font-weight: 500;
@@ -7185,6 +7185,8 @@ select.form-input-compact:disabled {
   letter-spacing: 0.02em;
   position: relative;
   z-index: 1;
+  text-align: center;
+  display: block;
 }
 
 .compact-sort option {
