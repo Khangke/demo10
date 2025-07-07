@@ -175,7 +175,7 @@ const ProductsPage = () => {
         <div className="compact-header">
           <div className="container">
             <h1 className="compact-title">
-              <span className="title-gradient">Bộ Sưu Tập</span> Trầm Hương
+              <span className="title-gradient">Trầm Hương</span> Khang
             </h1>
             <p className="compact-subtitle">Sản phẩm tự nhiên cao cấp</p>
           </div>
