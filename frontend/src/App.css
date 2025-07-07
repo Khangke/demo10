@@ -7267,26 +7267,14 @@ select.form-input-compact:disabled {
 
 /* Search Container */
 .search-container {
-  flex: 0;
-}
-
-.search-input-wrapper.show {
-  width: 200px;
   position: relative;
-  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.search-toggle {
-  width: 40px;
-  height: 40px;
-  padding: 0.5rem;
-}
-
-.sort-select {
-  flex: 0 0 auto;
-  min-width: auto;
-  width: fit-content;
-  max-width: 100px;
+.search-container.expanded {
+  flex: 1;
 }
 
 .search-toggle {
@@ -7302,6 +7290,7 @@ select.form-input-compact:disabled {
   justify-content: center;
   width: 44px;
   height: 44px;
+  flex-shrink: 0;
 }
 
 .search-toggle:hover {
@@ -7313,6 +7302,23 @@ select.form-input-compact:disabled {
 .search-toggle ion-icon {
   font-size: 1.1rem;
   color: inherit;
+}
+
+.search-input-wrapper {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  margin-left: 0;
+}
+
+.search-input-wrapper.show {
+  width: 280px;
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0.5rem;
 }
 
 .search-input-wrapper {
