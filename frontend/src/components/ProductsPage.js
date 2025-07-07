@@ -190,7 +190,7 @@ const ProductsPage = () => {
   }
 
   return (
-    <div className="compact-products-page">
+    <div className="compact-products-page" style={{ marginTop: '80px' }}>
       <Helmet>
         <title>{seoData.title}</title>
         <meta name="description" content={seoData.description} />
