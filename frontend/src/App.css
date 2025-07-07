@@ -5,33 +5,58 @@
   box-sizing: border-box;
 }
 
-/* Prevent zoom and horizontal scroll - only allow vertical scrolling */
-html, body {
-  touch-action: pan-y;
-  -ms-touch-action: pan-y;
-  -webkit-touch-action: pan-y;
+/* Completely disable zoom but allow horizontal and vertical scrolling */
+html {
+  touch-action: pan-x pan-y;
+  -ms-touch-action: pan-x pan-y;
+  -webkit-touch-action: pan-x pan-y;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  zoom: 1;
+  -webkit-user-zoom: fixed;
+  -moz-user-zoom: fixed;
+  user-zoom: fixed;
+}
+
+body {
+  touch-action: pan-x pan-y;
+  -ms-touch-action: pan-x pan-y;
+  -webkit-touch-action: pan-x pan-y;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  zoom: 1;
+  position: relative;
+  overflow-x: auto;
   overflow-y: auto;
-  width: 100%;
-  max-width: 100vw;
 }
 
-/* Prevent horizontal scrolling on all elements */
+/* Disable zoom on double tap */
 * {
-  max-width: 100%;
-  overflow-x: hidden;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Allow text selection for better UX */
-p, span, h1, h2, h3, h4, h5, h6, div[contentEditable], input, textarea {
+p, span, h1, h2, h3, h4, h5, h6, div[contentEditable], input, textarea, button, a {
   user-select: text;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
+}
+
+/* Force fixed zoom level */
+@media screen and (max-width: 767px) {
+  html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+  }
 }
 
 /* Smooth scrolling behavior */
