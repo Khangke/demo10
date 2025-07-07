@@ -240,10 +240,74 @@ const ProductsPage = () => {
       </Helmet>
 
       <div className="container">
+        {/* Compact Action Bar */}
+        <div className="action-bar">
+          <div className="action-left">
+            {/* Category Dropdown */}
+            <div className="category-dropdown">
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+                className="category-select"
+              >
+                {categories.map(category => (
+                  <option key={category.id} value={category.id}>
+                    {category.icon} {category.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div className="action-right">
+            {/* Search Toggle */}
+            <div className={`search-container ${searchExpanded ? 'expanded' : ''}`}>
+              <button
+                className="search-toggle"
+                onClick={() => setSearchExpanded(!searchExpanded)}
+                aria-label="Tìm kiếm"
+              >
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+              <div className={`search-input-wrapper ${searchExpanded ? 'show' : ''}`}>
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm sản phẩm..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="search-input"
+                  autoFocus={searchExpanded}
+                />
+                {searchQuery && (
+                  <button
+                    className="search-clear"
+                    onClick={() => setSearchQuery('')}
+                    aria-label="Xóa tìm kiếm"
+                  >
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* Sort Dropdown */}
+            <select
+              className="sort-select"
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+            >
+              <option value="newest">Mới nhất</option>
+              <option value="price-low">Giá thấp</option>
+              <option value="price-high">Giá cao</option>
+              <option value="name">Tên A-Z</option>
+            </select>
+          </div>
+        </div>
+
         {/* Products Section */}
         <div className="products-section">
           <div className="section-info">
-            <h2>Tất Cả Sản Phẩm</h2>
+            <h2>{selectedCategory === 'all' ? 'Tất Cả Sản Phẩm' : categories.find(c => c.id === selectedCategory)?.name}</h2>
             <span className="count">{filteredProducts.length} sản phẩm</span>
           </div>
 
