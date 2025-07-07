@@ -700,7 +700,7 @@ body {
 /* Mobile Optimization - Giảm 30% kích thước cho mobile */
 @media (max-width: 768px) {
   .featured-products {
-    padding: 2.52rem 0; /* Giảm 30% từ 6rem */
+    padding: 2.52rem 0; /* Giảm 40% từ 4.2rem */
   }
   
   .products-grid {
@@ -12161,7 +12161,7 @@ select.form-input-compact:disabled {
   
   /* Enhanced Mobile Promotions - Giảm 40% kích thước tối ưu mobile */
   .promotions {
-    padding: 2.52rem 0; /* Giảm 30% từ 6rem */
+    padding: 2.52rem 0; /* Giảm 40% từ 4.2rem */
   }
   
   .promotions-grid {
@@ -12674,7 +12674,7 @@ select.form-input-compact:disabled {
   
   /* Enhanced Mobile Promotions - Giảm 40% kích thước tối ưu mobile */
   .promotions {
-    padding: 2.52rem 0; /* Giảm 30% từ 6rem */
+    padding: 2.52rem 0; /* Giảm 40% từ 4.2rem */
   }
   
   .promotions-grid {
