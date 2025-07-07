@@ -5,15 +5,24 @@
   box-sizing: border-box;
 }
 
-/* Prevent zoom and ensure only scrolling */
+/* Prevent zoom and horizontal scroll - only allow vertical scrolling */
 html, body {
-  touch-action: pan-y pan-x;
-  -ms-touch-action: pan-y pan-x;
-  -webkit-touch-action: pan-y pan-x;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  -webkit-touch-action: pan-y;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Prevent horizontal scrolling on all elements */
+* {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
