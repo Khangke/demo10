@@ -11272,7 +11272,7 @@ select.form-input-compact:disabled {
 /* Related Products Section */
 .related-products {
   background: linear-gradient(135deg, #141414 0%, #1A1A1A 100%);
-  padding: 4rem 0;
+  padding: 2.4rem 0;
   position: relative;
   border-top: 1px solid rgba(244, 208, 63, 0.1);
 }
@@ -12451,7 +12451,7 @@ select.form-input-compact:disabled {
   
   /* Enhanced Ultra-Small Mobile Promotions - Giảm 40% */
   .promotions {
-    padding: 4rem 0;
+    padding: 2.4rem 0;
   }
   
   .promotions-grid {
@@ -12886,7 +12886,7 @@ select.form-input-compact:disabled {
   
   /* Enhanced Ultra-Small Mobile Promotions - Giảm 40% */
   .promotions {
-    padding: 4rem 0;
+    padding: 2.4rem 0;
   }
   
   .promotions-grid {
