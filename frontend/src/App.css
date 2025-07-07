@@ -12206,7 +12206,7 @@ select.form-input-compact:disabled {
   .promo-buttons {
     justify-content: center;
     gap: 0.42rem; /* Giảm 30% từ 1rem */
-    margin-top: 1.05rem; /* Giảm 30% từ 1.5rem */
+    margin-top: 0.63rem; /* Giảm 30% từ 1.5rem */
   }
   
   .promo-btn {
@@ -12719,7 +12719,7 @@ select.form-input-compact:disabled {
   .promo-buttons {
     justify-content: center;
     gap: 0.42rem; /* Giảm 30% từ 1rem */
-    margin-top: 1.05rem; /* Giảm 30% từ 1.5rem */
+    margin-top: 0.63rem; /* Giảm 30% từ 1.5rem */
   }
   
   .promo-btn {
