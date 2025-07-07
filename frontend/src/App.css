@@ -3408,10 +3408,32 @@ select.form-input-compact:disabled {
   background: linear-gradient(90deg, transparent, rgba(244, 208, 63, 0.3), transparent);
 }
 
-/* Mobile Optimization - Giảm tiếp 20% (tổng cộng giảm 44% so với ban đầu) */
+/* Why Choose Us - Mobile Fix */
 @media (max-width: 768px) {
   .why-choose-us {
-    padding: 3.92rem 0; /* Giảm 20% từ 4.9rem (ban đầu 7rem) */
+    padding: 4rem 0;
+  }
+  
+  .why-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .feature-item {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .feature-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+  }
+  
+  .feature-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }
 
