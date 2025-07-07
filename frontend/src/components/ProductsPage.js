@@ -172,14 +172,6 @@ const ProductsPage = () => {
   if (error) {
     return (
       <div className="compact-products-page">
-        <div className="compact-header">
-          <div className="container">
-            <h1 className="compact-title">
-              <span className="title-gradient">Trầm Hương</span> Khang
-            </h1>
-            <p className="compact-subtitle">Sản phẩm tự nhiên cao cấp</p>
-          </div>
-        </div>
         <div className="container">
           <div className="error-state">
             <ion-icon name="alert-circle-outline"></ion-icon>
