@@ -7722,11 +7722,11 @@ select.form-input-compact:disabled {
 /* Enhanced Responsive Design */
 @media (max-width: 1024px) {
   .compact-header {
-    padding: 1.4rem 0;
+    padding: 1.582rem 0;
   }
   
   .compact-title {
-    font-size: 1.33rem;
+    font-size: 1.504rem;
   }
   
   .filter-row {
