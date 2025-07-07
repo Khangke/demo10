@@ -3466,6 +3466,18 @@ select.form-input-compact:disabled {
   --ionicon-stroke-width: 0;
 }
 
+/* Mobile Optimization - Giảm 44% cho review rating */
+@media (max-width: 768px) {
+  .review-rating {
+    font-size: 0.616rem; /* Giảm 44% từ 1.1rem */
+    gap: 1.12px; /* Giảm 44% từ 2px */
+  }
+  
+  .review-rating ion-icon {
+    font-size: 0.56rem; /* Giảm 44% từ 1rem */
+  }
+}
+
 .review-text {
   color: #B8B8B8;
   font-size: 0.95rem;
