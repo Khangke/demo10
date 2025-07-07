@@ -7637,16 +7637,7 @@ select.form-input-compact:disabled {
 }
 
 .reviewer-info {
-  display: flex;
-  gap: 0.8rem;
-}
-
-.reviewer-avatar {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(244, 208, 63, 0.3);
+  flex: 1;
 }
 
 .reviewer-details {
@@ -7660,7 +7651,7 @@ select.form-input-compact:disabled {
   font-size: 1rem;
   font-weight: 700;
   color: #E8E8E8;
-  margin: 0 0 0.3rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .verified-badge {
@@ -7680,7 +7671,7 @@ select.form-input-compact:disabled {
 }
 
 .review-rating ion-icon {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #666;
 }
 
@@ -7690,7 +7681,7 @@ select.form-input-compact:disabled {
 
 .review-date {
   color: #B8B8B8;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
