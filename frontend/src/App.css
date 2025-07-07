@@ -7947,65 +7947,86 @@ select.form-input-compact:disabled {
 
 @media (max-width: 480px) {
   .compact-header {
-    padding: 0.6rem 0;
+    padding: 0.42rem 0;
   }
   
   .compact-title {
-    font-size: 1.2rem;
+    font-size: 0.84rem;
   }
   
   .compact-subtitle {
-    font-size: 0.7rem;
+    font-size: 0.49rem;
   }
   
   .compact-filters {
-    padding: 0.8rem 0 0.6rem 0;
+    padding: 0.56rem 0 0.42rem 0;
   }
   
   .products-section {
-    padding: 0.8rem 0;
+    padding: 0.56rem 0;
   }
   
   .container {
-    padding: 0 0.6rem;
+    padding: 0 0.42rem;
   }
   
   .compact-grid {
-    gap: 0.5rem;
-  }
-  
-  .card-image {
-    height: 100px;
-  }
-  
-  .card-content {
-    padding: 0.5rem;
-  }
-  
-  .product-title {
-    font-size: 0.75rem;
-  }
-  
-  .product-desc {
-    font-size: 0.6rem;
-  }
-  
-  .current-price {
-    font-size: 0.8rem;
-  }
-  
-  .old-price {
-    font-size: 0.6rem;
-  }
-  
-  /* Ensure grid doesn't break on very small screens */
-  .compact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem;
   }
   
   .compact-card {
-    min-width: 0;
-    max-width: 100%;
+    border-radius: 0.7rem;
+  }
+  
+  .card-image {
+    height: 84px;
+  }
+  
+  .card-content {
+    padding: 0.42rem;
+  }
+  
+  .product-title {
+    font-size: 0.56rem;
+    margin-bottom: 0.14rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .product-desc {
+    font-size: 0.455rem;
+    margin-bottom: 0.35rem;
+    -webkit-line-clamp: 1;
+  }
+  
+  .product-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.21rem;
+  }
+  
+  .current-price {
+    font-size: 0.595rem;
+  }
+  
+  .old-price {
+    font-size: 0.455rem;
+  }
+  
+  .rating ion-icon {
+    font-size: 0.42rem;
+  }
+  
+  .quick-view {
+    width: 21px;
+    height: 21px;
+    font-size: 0.63rem;
+  }
+  
+  .featured-badge {
+    width: 12.6px;
+    height: 12.6px;
+    font-size: 0.42rem;
   }
 }
 
