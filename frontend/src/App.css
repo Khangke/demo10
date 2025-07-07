@@ -936,6 +936,16 @@ body {
   overflow: hidden;
 }
 
+/* Mobile Optimization - Giảm 30% cho add-to-cart-btn */
+@media (max-width: 768px) {
+  .add-to-cart-btn {
+    padding: 0.63rem 1.26rem; /* Giảm 30% từ 0.9rem 1.8rem */
+    border-radius: 17.5px; /* Giảm 30% từ 25px */
+    font-size: 0.63rem; /* Giảm 30% từ 0.9rem */
+    box-shadow: 0 1.4px 5.6px rgba(244, 208, 63, 0.15); /* Giảm 30% */
+  }
+}
+
 .add-to-cart-btn:hover {
   transform: translateY(-1px) scale(1.01);
   box-shadow: 0 4px 16px rgba(244, 208, 63, 0.25);
