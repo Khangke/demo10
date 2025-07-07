@@ -12194,7 +12194,7 @@ select.form-input-compact:disabled {
   }
   
   .timer-unit {
-    min-width: 40.6px; /* Giảm 30% từ 58px */
+    min-width: 24px; /* Giảm 30% từ 58px */
     padding: 0.63rem 0.35rem; /* Giảm 30% từ 0.9rem 0.5rem */
     font-size: 0.665rem; /* Giảm 30% từ 0.95rem */
   }
@@ -12707,7 +12707,7 @@ select.form-input-compact:disabled {
   }
   
   .timer-unit {
-    min-width: 40.6px; /* Giảm 30% từ 58px */
+    min-width: 24px; /* Giảm 30% từ 58px */
     padding: 0.63rem 0.35rem; /* Giảm 30% từ 0.9rem 0.5rem */
     font-size: 0.665rem; /* Giảm 30% từ 0.95rem */
   }
