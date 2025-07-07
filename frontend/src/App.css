@@ -12218,7 +12218,7 @@ select.form-input-compact:disabled {
   
   .promo-badge {
     top: 13px; /* Giảm 30% từ 30px */
-    right: 14px; /* Giảm 30% từ 20px */
+    right: 8px; /* Giảm 30% từ 20px */
     padding: 0.35rem 0.7rem; /* Giảm 30% từ 0.5rem 1rem */
     font-size: 0.525rem; /* Giảm 30% từ 0.75rem */
   }
@@ -12731,7 +12731,7 @@ select.form-input-compact:disabled {
   
   .promo-badge {
     top: 13px; /* Giảm 30% từ 30px */
-    right: 14px; /* Giảm 30% từ 20px */
+    right: 8px; /* Giảm 30% từ 20px */
     padding: 0.35rem 0.7rem; /* Giảm 30% từ 0.5rem 1rem */
     font-size: 0.525rem; /* Giảm 30% từ 0.75rem */
   }
