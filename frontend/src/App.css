@@ -3493,6 +3493,19 @@ select.form-input-compact:disabled {
   font-weight: 400;
 }
 
+/* Mobile Optimization - Giảm 44% cho review text và date */
+@media (max-width: 768px) {
+  .review-text {
+    font-size: 0.532rem; /* Giảm 44% từ 0.95rem */
+    line-height: 1.5; /* Điều chỉnh cho mobile */
+    margin-bottom: 0.84rem; /* Giảm 44% từ 1.5rem */
+  }
+  
+  .review-date {
+    font-size: 0.448rem; /* Giảm 44% từ 0.8rem */
+  }
+}
+
 /* Promotions - Enhanced Modern Design */
 .promotions {
   background: 
