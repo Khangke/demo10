@@ -7202,6 +7202,208 @@ select.form-input-compact:disabled {
   padding: 1rem 0;
 }
 
+/* Compact Action Bar */
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(244, 208, 63, 0.1);
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.action-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.action-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Category Dropdown */
+.category-dropdown {
+  position: relative;
+}
+
+.category-select {
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+  border: 1px solid rgba(244, 208, 63, 0.2);
+  border-radius: 12px;
+  padding: 0.6rem 2.5rem 0.6rem 0.8rem;
+  color: #E8E8E8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F4D03F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 1rem;
+  min-width: 140px;
+}
+
+.category-select:hover {
+  border-color: rgba(244, 208, 63, 0.4);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #F4D03F;
+  box-shadow: 0 0 0 2px rgba(244, 208, 63, 0.1);
+}
+
+.category-select option {
+  background-color: #2A2A2A;
+  color: #E8E8E8;
+  padding: 0.5rem;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-toggle {
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+  border: 1px solid rgba(244, 208, 63, 0.2);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #F4D03F;
+  z-index: 2;
+}
+
+.search-toggle:hover {
+  border-color: rgba(244, 208, 63, 0.4);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+  transform: scale(1.05);
+}
+
+.search-toggle ion-icon {
+  font-size: 1rem;
+}
+
+.search-input-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+  border: 1px solid rgba(244, 208, 63, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-wrapper.show {
+  width: 240px;
+  border-color: #F4D03F;
+  box-shadow: 0 0 0 2px rgba(244, 208, 63, 0.1);
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #E8E8E8;
+  font-size: 0.85rem;
+  padding: 0.6rem 2.8rem 0.6rem 2.5rem;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.1s;
+}
+
+.search-input-wrapper.show .search-input {
+  opacity: 1;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-clear {
+  position: absolute;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.search-input-wrapper.show .search-clear {
+  opacity: 1;
+}
+
+.search-clear:hover {
+  color: #F4D03F;
+  background: rgba(244, 208, 63, 0.1);
+}
+
+.search-clear ion-icon {
+  font-size: 0.9rem;
+}
+
+/* Sort Dropdown */
+.sort-select {
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+  border: 1px solid rgba(244, 208, 63, 0.2);
+  border-radius: 12px;
+  padding: 0.6rem 2.2rem 0.6rem 0.8rem;
+  color: #E8E8E8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F4D03F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 0.9rem;
+  min-width: 100px;
+}
+
+.sort-select:hover {
+  border-color: rgba(244, 208, 63, 0.4);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: #F4D03F;
+  box-shadow: 0 0 0 2px rgba(244, 208, 63, 0.1);
+}
+
+.sort-select option {
+  background-color: #2A2A2A;
+  color: #E8E8E8;
+  padding: 0.5rem;
+}
+
 .section-info {
   display: flex;
   justify-content: space-between;
