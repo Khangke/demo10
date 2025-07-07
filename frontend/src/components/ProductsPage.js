@@ -377,6 +377,9 @@ const ProductsPage = () => {
               <div key={review.id} className="review-card">
                 <div className="review-header">
                   <div className="reviewer-info">
+                    <div className="reviewer-avatar">
+                      <ion-icon name="person"></ion-icon>
+                    </div>
                     <div className="reviewer-details">
                       <h4 className="reviewer-name">
                         {review.name}
@@ -386,6 +389,7 @@ const ProductsPage = () => {
                           </span>
                         )}
                       </h4>
+                      <span className="reviewer-location">{review.location}</span>
                       <div className="review-meta">
                         <div className="review-rating">
                           {[...Array(5)].map((_, i) => (
