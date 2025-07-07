@@ -7717,19 +7717,19 @@ select.form-input-compact:disabled {
 /* Enhanced Responsive Design */
 @media (max-width: 1024px) {
   .compact-header {
-    padding: 2rem 0;
+    padding: 1.4rem 0;
   }
   
   .compact-title {
-    font-size: 1.9rem;
+    font-size: 1.33rem;
   }
   
   .filter-row {
-    gap: 1rem;
+    gap: 0.7rem;
   }
   
   .compact-search {
-    max-width: 280px;
+    max-width: 196px;
   }
 }
 
