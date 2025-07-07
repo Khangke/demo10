@@ -184,11 +184,13 @@ body {
 
 .logo .tagline {
   color: #C0C0C0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-style: italic;
   font-weight: 400;
-  opacity: 0.85;
-  letter-spacing: 0.3px;
+  opacity: 0.8;
+  letter-spacing: 0.2px;
+  margin: 0;
+  line-height: 1.2;
 }
 
 
