@@ -3283,6 +3283,19 @@ select.form-input-compact:disabled {
   font-weight: 400;
 }
 
+/* Mobile Optimization - Giảm 30% cho feature content text */
+@media (max-width: 768px) {
+  .feature-content h3 {
+    font-size: 0.875rem; /* Giảm 30% từ 1.25rem */
+    margin-bottom: 0.7rem; /* Giảm 30% từ 1rem */
+  }
+  
+  .feature-content p {
+    font-size: 0.665rem; /* Giảm 30% từ 0.95rem */
+    line-height: 1.5; /* Điều chỉnh line-height cho mobile */
+  }
+}
+
 /* Reviews */
 .reviews {
   background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
