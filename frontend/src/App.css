@@ -7461,14 +7461,6 @@ select.form-input-compact:disabled {
   .compact-title {
     font-size: 1.504rem;
   }
-  
-  .filter-row {
-    gap: 0.7rem;
-  }
-  
-  .compact-search {
-    max-width: 196px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -7486,49 +7478,6 @@ select.form-input-compact:disabled {
   
   .compact-subtitle {
     font-size: 0.712rem;
-  }
-  
-  .filter-row {
-    flex-direction: column;
-    gap: 0.7rem;
-    align-items: stretch;
-  }
-  
-  .compact-search {
-    max-width: 100%;
-  }
-  
-  .compact-search input {
-    padding: 0.56rem 0.7rem 0.56rem 2.1rem;
-  }
-  
-  .compact-search ion-icon {
-    left: 0.7rem;
-    font-size: 0.98rem;
-  }
-  
-  .compact-sort {
-    font-size: 0.7rem;
-    padding: 0.56rem 0.7rem;
-  }
-  
-  .category-pills {
-    gap: 0.56rem;
-  }
-  
-  .category-pills .pill {
-    flex-shrink: 0;
-    padding: 0.35rem 0.7rem;
-    font-size: 0.56rem;
-  }
-  
-  .category-pills .pill span[role="img"] {
-    font-size: 0.63rem;
-  }
-  
-  .category-pills {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
   
   .category-pills::-webkit-scrollbar {
