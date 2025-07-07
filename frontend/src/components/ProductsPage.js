@@ -10,6 +10,7 @@ const ProductsPage = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [sortBy, setSortBy] = useState('newest');
   const [searchQuery, setSearchQuery] = useState('');
@@ -37,49 +38,84 @@ const ProductsPage = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`${API}/products`);
-        setProducts(response.data);
-        setFilteredProducts(response.data);
+        setError(null);
+        
+        if (!BACKEND_URL) {
+          throw new Error('Backend URL not configured');
+        }
+        
+        const response = await axios.get(`${API}/products`, {
+          timeout: 10000,
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+        
+        if (response.data && Array.isArray(response.data)) {
+          setProducts(response.data);
+          setFilteredProducts(response.data);
+        } else {
+          setProducts([]);
+          setFilteredProducts([]);
+        }
       } catch (error) {
         console.error('Error fetching products:', error);
+        setError('Không thể tải sản phẩm. Vui lòng thử lại sau.');
+        setProducts([]);
+        setFilteredProducts([]);
       } finally {
         setLoading(false);
       }
     };
 
     fetchProducts();
-  }, []);
+  }, [API, BACKEND_URL]);
 
   // Filter and sort products
   useEffect(() => {
+    if (!products || products.length === 0) {
+      setFilteredProducts([]);
+      return;
+    }
+
     let filtered = [...products];
 
     // Filter by category
     if (selectedCategory !== 'all') {
-      filtered = filtered.filter(product => 
-        product.category?.toLowerCase().includes(selectedCategory.toLowerCase()) ||
-        product.name.toLowerCase().includes(selectedCategory.replace('-', ' ').toLowerCase())
-      );
+      filtered = filtered.filter(product => {
+        if (!product) return false;
+        const category = product.category || '';
+        const name = product.name || '';
+        const searchTerm = selectedCategory.replace('-', ' ').toLowerCase();
+        
+        return category.toLowerCase().includes(searchTerm) ||
+               name.toLowerCase().includes(searchTerm);
+      });
     }
 
     // Filter by search
-    if (searchQuery) {
-      filtered = filtered.filter(product =>
-        product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.description.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+    if (searchQuery && searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim();
+      filtered = filtered.filter(product => {
+        if (!product) return false;
+        const name = product.name || '';
+        const description = product.description || '';
+        
+        return name.toLowerCase().includes(query) ||
+               description.toLowerCase().includes(query);
+      });
     }
 
     // Sort products
     switch (sortBy) {
       case 'price-low':
-        filtered.sort((a, b) => a.price - b.price);
+        filtered.sort((a, b) => (a.price || 0) - (b.price || 0));
         break;
       case 'price-high':
-        filtered.sort((a, b) => b.price - a.price);
+        filtered.sort((a, b) => (b.price || 0) - (a.price || 0));
         break;
       case 'name':
-        filtered.sort((a, b) => a.name.localeCompare(b.name));
+        filtered.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
         break;
       default:
         // Keep original order (newest)
@@ -89,17 +125,52 @@ const ProductsPage = () => {
     setFilteredProducts(filtered);
   }, [products, selectedCategory, sortBy, searchQuery]);
 
-  // Format price
+  // Format price safely
   const formatPrice = (price) => {
-    return new Intl.NumberFormat('vi-VN').format(price) + ' VNĐ';
+    if (!price || isNaN(price)) return '0 VNĐ';
+    try {
+      return new Intl.NumberFormat('vi-VN').format(price) + ' VNĐ';
+    } catch (error) {
+      return price + ' VNĐ';
+    }
   };
 
+  // Render loading state
   if (loading) {
     return (
       <div className="compact-products-page">
         <div className="compact-loading">
           <div className="compact-spinner"></div>
           <p>Đang tải...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Render error state
+  if (error) {
+    return (
+      <div className="compact-products-page">
+        <div className="compact-header">
+          <div className="container">
+            <h1 className="compact-title">
+              <span className="title-gradient">Bộ Sưu Tập</span> Trầm Hương
+            </h1>
+            <p className="compact-subtitle">Sản phẩm tự nhiên cao cấp</p>
+          </div>
+        </div>
+        <div className="container">
+          <div className="error-state">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <h3>Có lỗi xảy ra</h3>
+            <p>{error}</p>
+            <button 
+              onClick={() => window.location.reload()} 
+              className="retry-btn"
+            >
+              Thử lại
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -141,6 +212,7 @@ const ProductsPage = () => {
                 placeholder="Tìm kiếm..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                maxLength={100}
               />
             </div>
             <select
@@ -162,8 +234,9 @@ const ProductsPage = () => {
                 key={category.id}
                 className={`pill ${selectedCategory === category.id ? 'active' : ''}`}
                 onClick={() => setSelectedCategory(category.id)}
+                type="button"
               >
-                {category.icon} {category.name}
+                <span role="img" aria-label={category.name}>{category.icon}</span> {category.name}
               </button>
             ))}
           </div>
@@ -180,48 +253,62 @@ const ProductsPage = () => {
             <div className="no-results">
               <ion-icon name="search-outline"></ion-icon>
               <h3>Không tìm thấy sản phẩm</h3>
-              <p>Thử từ khóa khác</p>
+              <p>Thử từ khóa khác hoặc chọn danh mục khác</p>
             </div>
           ) : (
             <div className="compact-grid">
-              {filteredProducts.map(product => (
-                <div key={product.id} className="compact-card">
-                  <div className="card-image">
-                    <img src={product.image} alt={product.name} />
-                    <div className="image-overlay">
-                      <Link to={`/product/${product.id}`} className="quick-view">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </Link>
+              {filteredProducts.map((product, index) => {
+                if (!product || !product.id) return null;
+                
+                return (
+                  <div key={`${product.id}-${index}`} className="compact-card">
+                    <div className="card-image">
+                      <img 
+                        src={product.image || '/default-product.jpg'} 
+                        alt={product.name || 'Sản phẩm'} 
+                        onError={(e) => {
+                          e.target.src = 'https://images.pexels.com/photos/3639806/pexels-photo-3639806.jpeg';
+                        }}
+                      />
+                      <div className="image-overlay">
+                        <Link 
+                          to={`/product/${product.id}`} 
+                          className="quick-view"
+                          aria-label={`Xem chi tiết ${product.name}`}
+                        >
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </Link>
+                      </div>
+                      {product.featured && (
+                        <div className="featured-badge">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      )}
                     </div>
-                    {product.featured && (
-                      <div className="featured-badge">
-                        <ion-icon name="star"></ion-icon>
-                      </div>
-                    )}
-                  </div>
-                  <div className="card-content">
-                    <h3 className="product-title">{product.name}</h3>
-                    <p className="product-desc">{product.description}</p>
-                    <div className="product-bottom">
-                      <div className="price-info">
-                        <span className="current-price">{formatPrice(product.price)}</span>
-                        {product.original_price && product.original_price > product.price && (
-                          <span className="old-price">{formatPrice(product.original_price)}</span>
-                        )}
-                      </div>
-                      <div className="rating">
-                        {[...Array(5)].map((_, i) => (
-                          <ion-icon
-                            key={i}
-                            name={i < product.rating ? "star" : "star-outline"}
-                            className={i < product.rating ? "filled" : ""}
-                          ></ion-icon>
-                        ))}
+                    <div className="card-content">
+                      <h3 className="product-title">{product.name || 'Tên sản phẩm'}</h3>
+                      <p className="product-desc">{product.description || 'Mô tả sản phẩm'}</p>
+                      <div className="product-bottom">
+                        <div className="price-info">
+                          <span className="current-price">{formatPrice(product.price)}</span>
+                          {product.original_price && product.original_price > product.price && (
+                            <span className="old-price">{formatPrice(product.original_price)}</span>
+                          )}
+                        </div>
+                        <div className="rating">
+                          {[...Array(5)].map((_, i) => (
+                            <ion-icon
+                              key={i}
+                              name={i < (product.rating || 0) ? "star" : "star-outline"}
+                              className={i < (product.rating || 0) ? "filled" : ""}
+                            ></ion-icon>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
