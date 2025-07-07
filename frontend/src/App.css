@@ -3249,6 +3249,25 @@ select.form-input-compact:disabled {
   filter: blur(8px);
 }
 
+/* Mobile Optimization - Giảm 30% cho feature icons */
+@media (max-width: 768px) {
+  .feature-icon {
+    font-size: 1.54rem; /* Giảm 30% từ 2.2rem */
+    width: 50.4px; /* Giảm 30% từ 72px */
+    height: 50.4px; /* Giảm 30% từ 72px */
+    box-shadow: 0 5.6px 16.8px rgba(244, 208, 63, 0.25); /* Giảm 30% */
+  }
+  
+  .feature-icon ion-icon {
+    font-size: 1.4rem; /* Giảm 30% từ 2rem */
+  }
+  
+  .feature-icon::after {
+    inset: -1.4px; /* Giảm 30% từ -2px */
+    filter: blur(5.6px); /* Giảm 30% từ 8px */
+  }
+}
+
 .feature-content h3 {
   color: #F4D03F;
   font-size: 1.25rem;
