@@ -7615,7 +7615,7 @@ select.form-input-compact:disabled {
 }
 
 .current-price {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: #F4D03F;
   line-height: 1;
